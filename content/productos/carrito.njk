@@ -199,10 +199,11 @@ endcss %}
 
 			// Reattach event listeners to the freshly added elements
 			Array.from(carrito.querySelectorAll(".removeFromCart")).forEach(
-				(rfcElm) => {
-					rfcElm.addEventListener("click", () => {
+				async (rfcElm) => {
+					rfcElm.addEventListener("click", async () => {
 						state.getState().removeProduct(rfcElm.dataset.productId);
-						window.cflabs.bold.setOrderInfo();
+						await window.cflabs.bold.setOrderInfo();
+
 						localStorage.setItem(
 							"products",
 							JSON.stringify(state.getState().products)

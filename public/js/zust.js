@@ -22,8 +22,7 @@ const zust = create((set, get) => ({
 		}),
 
 	getTotalPrice: () => {
-		const products = get().products;
-		return products.reduce((total, p) => total + Number(p.precio || 0), 0);
+		return get().products.reduce((total, p) => total + Number(p.precio || 0), 0);
 	},
 
 	getProductNamesConcat: () => {
