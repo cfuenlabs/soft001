@@ -1,0 +1,124 @@
+<div style="display: flex; flex-direction: row; border-bottom: 1px solid #cfcfcf; justify-content: space-evenly; align-items: center; padding-bottom: 20px;">
+	<a href="/" {# class="desktop" #} style="text-decoration: none;">
+		<img src="/img/logo.png"></img>
+	</a>
+
+	{#
+	<a href="/" class="mobile" style="text-decoration: none;">
+		<img src="/img/logo-minimal.png"></img>
+	</a>
+	#}
+
+	<a
+		class="WhatsAppButton desktop"
+		href="https://api.whatsapp.com/send/?phone=573503324894&text&type=phone_number&app_absent=0">
+		<img src="/img/icono_apple.png">
+		<span>
+			Chatea con nosotros
+		</span>
+	</a>
+	{#- <div>{ searchbar }</div> #}
+	<a href="/productos" class="desktop">Productos</a>
+	<a href="/servicios" class="desktop">Servicios</a>
+	<a href="/nosotros" class="desktop">Sobre Nosotros</a>
+
+	<button
+	style="border: none; background: none; cursor: pointer;"
+	onclick="window.location = '/productos/carrito'">
+		<img
+		class="w-box c10ddvei c1qrwpo0 iconify"
+		src="{% icon "shopping-bag-4-fill", "9468FC" %}">
+	</button>
+
+	<button class="mobile none" data-modal-id="NavModal">
+		<img
+		class="w-box c10ddvei c1qrwpo0 iconify"
+		src="{% icon "menu-fill" %}">
+	</button>
+</div>
+
+{% css %}
+	#ModalOverlay {
+		opacity: 0.2; background-color: black;
+		position: fixed; top: 0; left: 0; height: 100%; height: 100dvh; width: 100vh;
+		pointer-events: none;
+	}
+	#ModalOverlay[data-active="false"] { display: none; }
+	#ModalOverlay[data-active="true"] { display: unset; }
+	.modal { position: fixed; border-radius: 30px; background-color: white; flex-direction: column; top: 40%; left: 20%;}
+	.modal[data-active="false"] { display: none; }
+	.modal[data-active="true"] { display: flex; }
+	.modal img.iconify {
+		width: 18px;
+  	top: 17px;
+  	position: absolute;
+  	right: 20px;
+	}
+
+	.modal#NavModal {
+		gap: 10px;
+		z-index: 50;
+	}
+
+	.modal#NavModal a {
+		font-size: 15px;
+	}
+
+	.modal#NavModal hr {
+		width: 100%;
+		opacity: 13%;
+		border: 1px black solid
+	}
+{% endcss %}
+
+<div id="ModalOverlay" data-active="false"></div>
+
+<div class="modal" id="NavModal" data-active="false" style="padding: 30px">
+
+		<img
+		class="w-box c10ddvei c1qrwpo0 iconify x"
+		src="{% icon 'close-large-fill' %}"
+		>
+	<h2>
+		¿A donde vamos?
+	</h2>
+
+	<hr>
+
+	<a href="/">Inicio</a>
+	<hr>
+	<a href="/productos">Productos</a>
+	<hr>
+	<a href="/servicios">Servicios</a>
+	<hr>
+	<a href="/nosotros">Sobre Nosotros</a>
+</div>
+
+{% js %}
+	window.cflabs.msjsRandom = [ "Hola! Quiero unirme al parche de las segundas oportunidades! 😎",
+	"Hola! Quiero preguntar si tienen un producto disponible 🤔💭",
+	"Buenas, quería llevar mi celular y que me asesoren para repararlo 🛠",
+	"Buenas, quiero comprar un iPhone 16 con mi iPhone 14 📱✨" ];
+	window.cflabs.whatsAppURL = `https://api.whatsapp.com/send/?phone=573503324894&text=${encodeURIComponent(window.cflabs.msjsRandom[Math.floor(Math.random() * (window.cflabs.msjsRandom.length-1))])}`;
+
+	Array.from(document.querySelectorAll("[data-modal-id]")).forEach(mt => {
+		mt.addEventListener("click", () => {
+			const modal = document.querySelector(`#${mt.dataset.modalId}`)
+			const modalOverlay = document.querySelector('#ModalOverlay')
+			console.log(modalOverlay)
+
+			modal.dataset.active === 'true' ? modal.dataset.active = false : modal.dataset.active = true
+			modalOverlay.dataset.active === 'true' ? modalOverlay.dataset.active = false : modalOverlay.dataset.active = true
+		})
+	})
+
+	Array.from(document.querySelectorAll(".modal")).forEach(modal => {
+			const modalOverlay = document.querySelector('#ModalOverlay')
+			const modalX = document.querySelector('.iconify.x')
+			console.log(modalOverlay)
+			modalX.addEventListener("click", () => {
+				modal.dataset.active = 'false';
+				modalOverlay.dataset.active = 'false';
+			})
+	})
+{% endjs %}

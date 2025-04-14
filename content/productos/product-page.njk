@@ -1,0 +1,592 @@
+---
+pagination:
+  data: productosCategorias
+  size: 1
+  alias: producto
+permalink: "productos/{{ pagination.pageNumber }}/index.html"
+---
+
+{% css %} button { cursor: pointer; } .StorageButton[data-active=false] {
+background: none; border: 2px solid rgba(148, 104, 252, 1); }
+.StorageButton[data-active=false] span { color: #9468fc !important; } {% endcss
+%}
+
+<title>{{ producto.categoria }} {{ producto.nombre }} | iPhoneShop</title>
+<meta
+	name="description"
+	content="Compra el {{ producto.categoria }} {{
+		producto.nombre
+	}} en Bogotá por ${{
+		producto.precio | lameMoney
+	}}. Incluye 1 año de garantía, factura legal y accesorios originales. Cámbialo por tu iPhone viejo y únete al parche de las segundas oportunidades."
+/>
+
+<button
+	class="w-button c1qxtfah c1cmvwnu cmizgbn c1y39me0 c16vdcy0 cmjb9f3 cfr73zw c1x0yk7u cfdrz1r c1d7qgsy chia14s c1tcsmd6 c17wxlj6"
+>
+	<img class="w-box c10ddvei c1qrwpo0" src="{% icon 'arrow-left-line' %}" />
+	<a
+		href="/productos"
+		class="w-text"
+		style="text-decoration: none; color: inherit"
+		>Volver</a
+	>
+</button>
+<div id="ProductDetails" class="w-box cmjb9f3 c19z4ibv cfr73zw c17rltea">
+	{% if producto.imagenes %} {% for imagen in producto.imagenes %}
+	<div
+		class="ProductImage w-box"
+		style="
+				background-image: url('/img/newproductos/{{ imagen.path }}');
+				background-position: center;
+				background-size: 60%;
+				background-repeat: no-repeat;
+				height: 80vh;
+				width: 500px;
+				{% if loop.index != 1 %}
+				display: none;
+				{% endif %}
+			"
+		data-color="{{ imagen.color }}"
+	></div>
+	{% endfor %} {% else %}
+	<div
+		id="ProductImage"
+		class="w-box"
+		style="
+			background-image: url('/img/newproductos/{{ producto.imagen }}');
+			background-position: center;
+			background-size: 60%;
+			background-repeat: no-repeat;
+			height: 80vh;
+			width: 500px;
+			"
+	></div>
+	{% endif %}
+	<div
+		class="w-box desktop c8fc2ts c6j7nan c25k87w c1ywrdyi cj0aezm cmjb9f3 c1i4k7lg c11z8tpt c1mmn4vs cgrqarw"
+		style="width: 50%"
+	>
+		<h1
+			class="w-heading c6koavb c1okmal5 c1l80qpp"
+			style="width: 90%; font-size: 4vw"
+		>
+			{% if producto.categoria === "Accesorios" %}
+			{{ producto.nombre }}
+			{% else %}
+			{{ producto.categoria }} {{ producto.nombre }}
+			{% endif %}
+		</h1>
+		<div class="w-text c1joile5 c1mg5cep crtj8fp">
+			$ {{ producto.precio | lameMoney }}
+		</div>
+		<div class="w-box">
+			<div class="w-text c1vi2vbz cwkfqbj crtj8fp">Medios de pago</div>
+			<div class="w-text c1ony0i0 crtj8fp c1mg5cep">
+				Tarjeta débito/crédito | Efectivo | Tu IPhone viejo | Crédito Vanti
+			</div>
+		</div>
+		<div class="w-text chia14s cwmfe2q c145dlcw">
+			Producto nuevo y sellado: Incluye 1 año de garantía, factura legal y
+			documentación completa para registro en cualquier operador. Además, cuenta
+			con cable de datos original, sellado y listo para su uso inmediato.
+		</div>
+		<div
+			class="w-text cjv7sq2 c1mg5cep c14notjg c1p8w8zz c1ki8kq9 c12qgyge c1ony0i0"
+		>
+			<i class="w-italic-text"
+				>Recuerda que nuestra tienda física está ubicada en:</i
+			><br /><b class="w-bold-text"
+				><i class="w-italic-text"
+					>Avenida Carrera 30 75-61, Local 111211 Bogotá, D.C.</i
+				></b
+			>
+		</div>
+		{% if producto.colores %}
+		<div class="w-box c1e532xa c1502ijh">
+			<div class="w-box cmjb9f3 cecqjxj ci555pz cfr73zw c17wyhp3">
+				<div class="w-text c1mg5cep">Color</div>
+				<div class="w-box cmjb9f3 c16hrwwz crr2iv3">
+					{% for color in producto.colores %}
+					<button
+						class="ColorButton w-box c1m9wykf cgfzz87 c1y9stmp cqixt7s c1hctfk1 c1skgs6s c12c16fo c13j9ftn c1k21dbm ct54u06 c18g2b9i cji22fm co5t2xk c5oagqz"
+						style="background-color: {{ color | textToColor }};"
+						data-color="{{ color }}"
+					></button>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+		{% endif %}
+		<div class="w-box cmjb9f3 c1x0yk7u c1odfpg9 c1mhnzcb">
+			<button
+				id="PurchaseBtn"
+				class="w-button c1cmvwnu cmizgbn c1y39me0 c16vdcy0 c143e598 ci555pz cecqjxj c1ifku28 cls8hpq c6kys0s c1s9v2a6 c1m9wykf cgfzz87 c1y9stmp cqixt7s c1ljdafx c17rltea cfr73zw cmig1nz cmv4ppy c1502ijh"
+			>
+				<span class="w-text csxjr51 cjn148n c16ud4p8 cpg05q c5pcot3 cf2c5mw"
+					>Comprar</span
+				>
+			</button>
+
+			<button
+				class="w-button c1keckai c17r1h2z c1ifku28 cls8hpq c6kys0s c1s9v2a6 c1m9wykf cgfzz87 c1y9stmp cqixt7s c1ljdafx c1x0yk7u cfr73zw c1qxtfah cmv4ppy c1502ijh cc0b51r c1tmsdbh"
+			>
+				<span
+					class="w-text c1up2k5j c1nxe5jf cmkteo9 cajlrxs crtj8fp c1mg5cep cf2c5mw"
+					style="flex-wrap: wrap"
+					>Pedir por WhatsApp</span
+				></button
+			><button
+				id="CartAddBtn"
+				class="w-button ci555pz cecqjxj c1ifku28 cls8hpq c6kys0s c1s9v2a6 c1m9wykf cgfzz87 c1y9stmp cqixt7s c1ljdafx c17rltea cfr73zw c1qxtfah cmv4ppy c1502ijh cmig1nz c1tmsdbh"
+			>
+				<span
+					class="w-text c1up2k5j c1nxe5jf cmkteo9 cajlrxs crtj8fp c1mg5cep cf2c5mw"
+					>Añadir +</span
+				>
+			</button>
+		</div>
+
+		{% if producto.almacenamiento.length > 0 %}
+		<div class="w-text c1mg5cep">Capacidad</div>
+		{% for stopt in producto.almacenamiento %}
+		<button
+			class="StorageButton w-button c1cmvwnu cmizgbn c1y39me0 c16vdcy0 c143e598 ci555pz cecqjxj c1ifku28 cls8hpq c6kys0s c1s9v2a6 c1m9wykf cgfzz87 c1y9stmp cqixt7s c1ljdafx c17rltea cfr73zw c1e532xa c1502ijh c15qzjcv"
+			data-storage="{{ stopt }}"
+			data-active="false"
+		>
+			<span
+				class="w-text csxjr51 cjn148n c16ud4p8 cpg05q c5pcot3 cf2c5mw czt98vz"
+				>{{ stopt }} GB</span
+			>
+		</button>
+		{% endfor %} {% endif %}
+	</div>
+	<div
+		class="w-box mobile-flex c8fc2ts c6j7nan c25k87w c1ywrdyi cj0aezm cmjb9f3 c1i4k7lg c11z8tpt c1mmn4vs cgrqarw"
+	>
+		<h1
+			class="w-heading c6koavb c1okmal5 c1l80qpp"
+			style="width: 90%; font-size: 4vw"
+		>
+			{% if producto.categoria === "Accesorios" %}
+			{{ producto.nombre }}
+			{% else %}
+			{{ producto.categoria }} {{ producto.nombre }}
+			{% endif %}
+		</h1>
+		<div class="w-text c1joile5 c1mg5cep crtj8fp">
+			$ {{ producto.precio | lameMoney }}
+		</div>
+		<div class="w-box">
+			<div class="w-text c1vi2vbz cwkfqbj crtj8fp">Medios de pago</div>
+			<div class="w-text c1ony0i0 crtj8fp c1mg5cep">
+				Tarjeta débito/crédito | Efectivo | Tu IPhone viejo | Crédito Vanti
+			</div>
+		</div>
+		<div class="w-text chia14s cwmfe2q c145dlcw">
+			Producto nuevo y sellado: Incluye 1 año de garantía, factura legal y
+			documentación completa para registro en cualquier operador. Además, cuenta
+			con cable de datos original, sellado y listo para su uso inmediato.
+		</div>
+		<div
+			class="w-text cjv7sq2 c1mg5cep c14notjg c1p8w8zz c1ki8kq9 c12qgyge c1ony0i0"
+		>
+			<i class="w-italic-text"
+				>Recuerda que nuestra tienda física está ubicada en:</i
+			><br /><b class="w-bold-text"
+				><i class="w-italic-text"
+					>Avenida Carrera 30 75-61, Local 111211 Bogotá, D.C.</i
+				></b
+			>
+		</div>
+		{% if producto.colores %}
+		<div class="w-box c1e532xa c1502ijh">
+			<div class="w-box cmjb9f3 cecqjxj ci555pz cfr73zw c17wyhp3">
+				<div class="w-text c1mg5cep">Color</div>
+				<div class="w-box cmjb9f3 c16hrwwz crr2iv3">
+					{% for color in producto.colores %}
+					<button
+						class="ColorButton w-box c1m9wykf cgfzz87 c1y9stmp cqixt7s c1hctfk1 c1skgs6s c12c16fo c13j9ftn c1k21dbm ct54u06 c18g2b9i cji22fm co5t2xk c5oagqz"
+						style="background-color: {{ color | textToColor }};"
+						data-color="{{ color }}"
+					></button>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+		{% endif %}
+		<div
+			class="w-box cmjb9f3 c1x0yk7u c1odfpg9 c1mhnzcb"
+			style="flex-wrap: wrap"
+		>
+			<button
+				class="w-button c1cmvwnu cmizgbn c1y39me0 c16vdcy0 c143e598 ci555pz cecqjxj c1ifku28 cls8hpq c6kys0s c1s9v2a6 c1m9wykf cgfzz87 c1y9stmp cqixt7s c1ljdafx c17rltea cfr73zw cmig1nz cmv4ppy c1502ijh"
+			>
+				<span class="w-text csxjr51 cjn148n c16ud4p8 cpg05q c5pcot3 cf2c5mw"
+					>Comprar</span
+				></button
+			><button
+				class="w-button c1keckai c17r1h2z c1ifku28 cls8hpq c6kys0s c1s9v2a6 c1m9wykf cgfzz87 c1y9stmp cqixt7s c1ljdafx c1x0yk7u cfr73zw c1qxtfah cmv4ppy c1502ijh cc0b51r c1tmsdbh"
+			>
+				<span
+					class="w-text c1up2k5j c1nxe5jf cmkteo9 cajlrxs crtj8fp c1mg5cep cf2c5mw"
+					>Pedir por WhatsApp</span
+				></button
+			><button
+				class="w-button ci555pz cecqjxj c1ifku28 cls8hpq c6kys0s c1s9v2a6 c1m9wykf cgfzz87 c1y9stmp cqixt7s c1ljdafx c17rltea cfr73zw c1qxtfah cmv4ppy c1502ijh cmig1nz c1tmsdbh"
+			>
+				<span
+					class="w-text c1up2k5j c1nxe5jf cmkteo9 cajlrxs crtj8fp c1mg5cep cf2c5mw"
+					>Añadir +</span
+				>
+			</button>
+		</div>
+
+		{% if producto.almacenamiento.length > 0 %}
+		<div class="w-text c1mg5cep">Capacidad</div>
+		{% for stopt in producto.almacenamiento %}
+		<button
+			class="StorageButton w-button c1cmvwnu cmizgbn c1y39me0 c16vdcy0 c143e598 ci555pz cecqjxj c1ifku28 cls8hpq c6kys0s c1s9v2a6 c1m9wykf cgfzz87 c1y9stmp cqixt7s c1ljdafx c17rltea cfr73zw c1e532xa c1502ijh c15qzjcv"
+			data-storage="{{ stopt }}"
+			data-active="false"
+		>
+			<span
+				class="w-text csxjr51 cjn148n c16ud4p8 cpg05q c5pcot3 cf2c5mw czt98vz"
+				>{{ stopt }} GB</span
+			>
+		</button>
+		{% endfor %} {% endif %}
+	</div>
+</div>
+
+{#
+
+<script id="Setup_Globals">
+	window.cflabs.boldButtonBuilder = undefined;
+</script>
+
+<script id="Setup_BoldButtonBuilder">
+	class BoldButtonBuilder {
+		constructor() {
+			this.attrs = {
+				"data-bold-button": "",
+			};
+		}
+
+		boldButton(theme) {
+			this.attrs["data-bold-button"] = theme;
+			return this;
+		}
+
+		orderId(idOrFn) {
+			this._orderIdSource = idOrFn;
+			return this;
+		}
+
+		currency(curr) {
+			this.attrs["data-currency"] = curr;
+			return this;
+		}
+
+		amount(value) {
+			this.attrs["data-amount"] = value;
+			return this;
+		}
+
+		apiKey(key) {
+			this.attrs["data-api-key"] = key;
+			return this;
+		}
+
+		integritySignature(hash) {
+			this.attrs["data-integrity-signature"] = hash;
+			return this;
+		}
+
+		redirectionUrl(url) {
+			this.attrs["data-redirection-url"] = url;
+			return this;
+		}
+
+		description(desc) {
+			this.attrs["data-description"] = desc;
+			return this;
+		}
+
+		tax(tax) {
+			this.attrs["data-tax"] = tax;
+			return this;
+		}
+
+		customerData(obj) {
+			this.attrs["data-customer-data"] = JSON.stringify(obj);
+			return this;
+		}
+
+		billingAddress(obj) {
+			this.attrs["data-billing-address"] = JSON.stringify(obj);
+			return this;
+		}
+
+		expirationDate(timestamp) {
+			this.attrs["data-expiration-date"] = timestamp;
+			return this;
+		}
+
+		originUrl(url) {
+			this.attrs["data-origin-url"] = url;
+			return this;
+		}
+
+		extraData1(data) {
+			this.attrs["data-extra-data-1"] = data;
+			return this;
+		}
+
+		extraData2(data) {
+			this.attrs["data-extra-data-2"] = data;
+			return this;
+		}
+
+		build() {
+			if (!this._orderIdSource) {
+				throw new Error(`Missing required field: orderId`);
+			}
+			if (!this.attrs["data-integrity-signature"]) {
+				throw new Error(`Missing required field: integritySignature`);
+			}
+
+			const resolvedOrderId =
+				typeof this._orderIdSource === "function"
+					? this._orderIdSource()
+					: this._orderIdSource;
+
+			this.attrs["data-order-id"] = resolvedOrderId;
+
+			const script = document.createElement("script");
+			for (const [key, value] of Object.entries(this.attrs)) {
+				script.setAttribute(key, value);
+			}
+			return script;
+		}
+
+		update(selector = "[data-bold-button]") {
+			if (!this._orderIdSource) {
+				throw new Error(`Missing required field: orderId`);
+			}
+			if (!this.attrs["data-integrity-signature"]) {
+				throw new Error(`Missing required field: integritySignature`);
+			}
+
+			const resolvedOrderId =
+				typeof this._orderIdSource === "function"
+					? this._orderIdSource()
+					: this._orderIdSource;
+
+			this.attrs["data-order-id"] = resolvedOrderId;
+
+			const el = document.querySelector(selector);
+			if (!el) return null;
+
+			for (const [key, value] of Object.entries(this.attrs)) {
+				el.setAttribute(key, value);
+			}
+
+			return el;
+		}
+
+		get() {
+			return this.build().outerHTML;
+		}
+	}
+
+	window.cflabs.boldButtonBuilder = new BoldButtonBuilder();
+
+	const getCFLSTAMP = (project, type) =>
+		`CFL_STAMP_${project}_${type}-${Math.floor(Date.now())}`;
+
+	window.cflabs.getCFLSTAMP = getCFLSTAMP;
+
+	const getExpirationTimestamp = (hours) =>
+		Date.now() * 1_000_000 + hours * 60 * 60 * 1_000_000_000;
+
+	window.cflabs.getExpirationTimestamp = getExpirationTimestamp;
+
+	const getBoldIntegrityHash = async (unhashedOrderString) => {
+		const _res = await fetch("/.netlify/functions/generateBoldHash", {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify({
+				unhashedOrderString: unhashedOrderString,
+			}),
+		});
+
+		const resText = await _res
+			.json()
+			.then((resJSON) => resJSON.hashedOrderString);
+		return resText;
+	};
+
+	window.cflabs.getBoldIntegrityHash = getBoldIntegrityHash;
+</script>
+
+#}
+
+<script id="Setup_Zustand_state" src="/js/zust.js" type="module"></script>
+
+<script id="Setup_CFL_utils" src="/js/cfl.js" type="module"></script>
+
+<script id="Setup_Bold_utils" src="/js/bold.js" type="module"></script>
+
+<script>
+	// Ensure everything is ready before interacting with the Zustand state
+	document.addEventListener("DOMContentLoaded", () => {
+		// Access Zustand state globally via window.cflabs.state
+		const state = window.cflabs.state;
+
+		if (localStorage.getItem('products')) {
+			state.getState().setProducts(JSON.parse(localStorage.getItem('products')) ?? []);
+		}
+
+		// Use the methods to interact with your cart and Bold Button setup
+		const boldButtonBuilder = window.cflabs.bold.buttonBuilder;
+
+		{% if producto.categoria === "Accesorios" %}
+			const productName = `{{ producto.nombre }}`
+		{% else %}
+			const productName = `{{ producto.categoria }} {{ producto.nombre }}`
+		{% endif %}
+
+		// Example of setting up the Bold button with dynamic data
+		document.querySelector("#CartAddBtn").addEventListener("click", () => {
+			const colorElm = Array.from(document.querySelectorAll('.ProductImage')).find(
+				piElm => getComputedStyle(piElm).display === 'block'
+			);
+
+			const failsafe = document.querySelector('#ProductImage')
+
+			const bgStyle = colorElm ? getComputedStyle(colorElm).backgroundImage : getComputedStyle(failsafe).backgroundImage;
+			const imagenURL = bgStyle.startsWith('url(')
+				? bgStyle.slice(4, -1).replace(/^["']|["']$/g, '')
+				: null;
+
+			const almacenamiento = document.querySelectorAll('.StorageButton') ? (Array.from(document.querySelectorAll('.StorageButton')).find(
+					piElm => piElm.dataset.active === 'true'
+				)?.dataset.storage ?? null) : null
+
+			const productDataObj = {
+				id: '{{ pagination.pageNumber }}'+(colorElm ? (colorElm.dataset.color ?? '') : '')+(almacenamiento),
+				nombre: productName,
+				precio: parseInt('{{ producto.precio }}'),
+				color: colorElm ?? null
+					? {
+							nombre: colorElm ? (colorElm.dataset.color ?? null) : null,
+							rgba: colorElm ? (getComputedStyle(colorElm).backgroundColor ?? null) : null,
+					  }
+					: null,
+				imagen: imagenURL,
+				almacenamiento,
+			};
+
+			state.getState().addProduct(productDataObj);
+			localStorage.setItem('products', JSON.stringify(state.getState().products))
+			console.log(state.getState().products);
+			window.cflabs.bold.setOrderInfo();
+		});
+	})
+</script>
+
+<script id="Events_Switching">
+	document.addEventListener("DOMContentLoaded", () => {
+		Array.from(document.querySelectorAll(".ColorButton")).forEach((b) => {
+			b.addEventListener("click", () => {
+				Array.from(document.querySelectorAll(".ProductImage")).forEach((pi) => {
+					if (pi.dataset.color === b.dataset.color) {
+						pi.style.display = "unset";
+					} else {
+						pi.style.display = "none";
+					}
+				});
+			});
+		});
+
+		Array.from(document.querySelectorAll(".StorageButton")).forEach((b) => {
+			b.addEventListener("click", () => {
+				Array.from(document.querySelectorAll(".StorageButton")).forEach(
+					(ab) => {
+						if (b.dataset.storage === ab.dataset.storage) {
+							ab.dataset.active = "true";
+						} else {
+							ab.dataset.active = "false";
+						}
+					}
+				);
+			});
+		});
+		document.querySelector(".StorageButton")
+			? Array.from(document.querySelectorAll(".StorageButton"))[0].click()
+			: () => {};
+	});
+</script>
+
+{#
+<script id="Events_BoldButtonInjection">
+	document.addEventListener("DOMContentLoaded", async () => {
+		const unhashedOrderString = window.cflabs.getCFLSTAMP("001", "cash");
+		const hashedOrderString = await window.cflabs.getBoldIntegrityHash(
+			`${unhashedOrderString}{{producto.precio}}COP`
+		);
+
+		{% if producto.categoria === "Accesorios" %}
+			const productName = `{{ producto.nombre }}`
+		{% else %}
+			const productName = `{{ producto.categoria }} {{ producto.nombre }}`
+		{% endif %}
+
+		// setup bold button
+		window.cflabs.boldButtonBuilder
+			.boldButton("dark-L")
+			.orderId(unhashedOrderString)
+			.currency("COP")
+			.amount("{{producto.precio}}")
+			.apiKey("{% getenv 'BOLD_TEST_PUBKEY' %}")
+			.integritySignature(hashedOrderString)
+			.description(productName)
+			//.tax("vat-19")
+			.customerData({
+				email: "missandreina21@gmail.com",
+				fullName: "Andreina Castillo",
+				phone: "3054120867",
+				dialCode: "+57",
+				documentNumber: "1034324819",
+				documentType: "CC",
+			})
+			.billingAddress({
+				address: "Calle 123 # 4-5",
+				zipCode: "123456",
+				city: "Bogota",
+				state: "Cundinamarca",
+				country: "CO",
+			})
+			.expirationDate(window.cflabs.getExpirationTimestamp(5))
+			.originUrl(window.location)
+			.redirectionUrl(window.location.origin)
+			.extraData1("Informacion extra 1")
+			.extraData2("Informacion extra 2")
+			.build();
+
+		// inject bold button
+		document.querySelector("#PurchaseBtn").outerHTML =
+			window.cflabs.boldButtonBuilder.get();
+
+		// inject bold script
+		const boldButtonScript = document.createElement("script");
+		boldButtonScript.src =
+			"https://checkout.bold.co/library/boldPaymentButton.js";
+		document.querySelector("head").appendChild(boldButtonScript);
+	});
+</script>
+#}

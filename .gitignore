@@ -1,0 +1,13 @@
+_site/
+node_modules/
+package-lock.json
+.cache
+
+# Local Netlify folder
+.netlify
+**/.node-runtime
+.env
+
+.vscode/
+AppData/
+**/vscode-sqltools/*

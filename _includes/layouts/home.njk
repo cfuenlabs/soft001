@@ -1,0 +1,33 @@
+---
+layout: layouts/base.njk
+---
+
+{%- css %} .emoji { height: 30px; } {% endcss %}
+{% include "nav.njk" %}
+<div
+	id="CallToAction"
+	style="
+		border-bottom: 1px solid #cfcfcf;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		padding: 10px 0 10px 0;
+		align-items: center;
+	"
+>
+	<img
+		class="emoji"
+		src="https://em-content.zobj.net/source/apple/391/smiling-face-with-sunglasses_1f60e.png"
+	/>
+	<span style="margin: 0 10px 0 10px; vertical-align: center; display: inline;"
+		>¡Únete al parche de las segundas oportunidades!</span
+	>
+	<img
+		class="emoji"
+		src="https://em-content.zobj.net/source/apple/391/sign-of-the-horns_1f918.png"
+	/>
+</div>
+
+{{ content | safe }}
+
+{% include "footer.njk" %}

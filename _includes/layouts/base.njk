@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="{{ metadata.language }}">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		{% if title %}
+		<title>{{ title or metadata.title }}</title>
+		{% endif %}
+		<meta
+			name="description"
+			content="{{ description or metadata.description }}"
+		/>
+		<meta property="og:image" content="/img/mini_banner.png" />
+
+		{#- Uncomment this if you’d like folks to know that you used Eleventy to
+		build your site! #}
+		<meta name="generator" content="{{ eleventy.generator }}" />
+
+		<link rel="icon" type="image/x-icon" href="/img/mini_iphoneshop_logo.ico" />
+
+		{#- Aquí el CSS :3 #} {#- Aquí el CSS :3
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+		/>
+		#} {%- css %}{% include
+		"public/css/app_generated_index-6937cd5a.DLu948qg.css" %}{% endcss %}
+		<style>
+			{%- getBundle "css" %}
+		</style>
+
+		<script id="Setup_BaseGlobal">
+			window.cflabs = {
+				state: null,
+				bold: null,
+				utils: null
+			};
+		</script>
+	</head>
+	<body style="margin: 0; min-width: 99dvw">
+		<main id="skip" style="margin: 0; margin-top: 30px">
+			{{ content | safe }}
+		</main>
+
+		{#
+		<script src="https://cdn.jsdelivr.net/npm/ismobilejs@1/dist/isMobile.min.js"></script>
+		#}
+		<script type="module" src="{% getBundleFileUrl 'js' %}"></script>
+		<!-- This page `{{ page.url }}` was built on {% currentBuildDate %} -->
+	</body>
+</html>

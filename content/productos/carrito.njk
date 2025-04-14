@@ -1,0 +1,259 @@
+---js
+const title = "Carrito | iPhoneShop"
+const description = "¿Pensando en comprar? ¡No lo pienses mucho! ¡Únete al parche de las segundas oportunidades!"
+---
+
+<script src="https://checkout.bold.co/library/boldPaymentButton.js"></script>
+
+{% css %} .ProductImage { width: 15vw; aspect-ratio: 1/1; } .Product:hover {
+transform: scale(1.2); } input, select { padding: 15px; width: 95%; border: 1px
+solid #A0A0A0; border-radius: 10px; background: none; } h2 { margin: 0; } {%
+endcss %}
+
+<div id="Carrito"></div>
+
+<form
+	id="CustomerInfoForm"
+	style="
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		justify-content: center;
+		align-items: center;
+	"
+>
+	<input
+		type="text"
+		id="CustomerFullName"
+		placeholder="Nombre completo"
+		required
+	/>
+	<div style="display: flex; flex-direction: row; gap: 60px; width: 95%">
+		<div style="display: flex; flex-direction: column; gap: 30px; width: 47%">
+			<input
+				type="tel"
+				id="CustomerPhoneNumber"
+				placeholder="Teléfono"
+				required
+			/>
+			<div style="display: flex; flex-direction: row; gap: 30px">
+				<input
+					type="text"
+					id="CustomerDocumentNumber"
+					placeholder="Número de documento"
+					required
+				/>
+				<select id="CustomerDocumentType" required>
+					<option value="" disabled selected>Tipo de documento</option>
+					<option value="CC">Cédula de ciudadanía</option>
+					<option value="CE">Cédula de extranjería</option>
+					<option value="NIT">NIT</option>
+				</select>
+			</div>
+		</div>
+
+		<div style="display: flex; flex-direction: column; gap: 30px; width: 47%">
+			<input
+				type="text"
+				id="CustomerCityOfResidence"
+				placeholder="Bogotá"
+				required
+			/>
+			<input
+				type="email"
+				id="CustomerEmail"
+				placeholder="Correo electrónico"
+				required
+			/>
+		</div>
+	</div>
+	<button id="BoldBtnPlaceholder">comprar con bold</button>
+</form>
+
+<script id="Setup_Zustand_state" src="/js/zust.js" type="module"></script>
+
+<script id="Setup_CFL_utils" src="/js/cfl.js" type="module"></script>
+
+<script id="Setup_Bold_utils" src="/js/bold.js" type="module"></script>
+
+<script>
+	lameMoneyLocal = (xd) => {
+		t = xd + "";
+		let processedMoney = "";
+		for (let i = 0; i < t.length; i++) {
+			if (i === t.length - 3) {
+				processedMoney += ".";
+			}
+			if (i === t.length - 6 && i !== 0) {
+				processedMoney += "’";
+			}
+			processedMoney += t.charAt(i);
+		}
+		return processedMoney;
+	};
+
+	function renderProductCard(product) {
+		return `
+		<div
+			data-product-id="${product.id}"
+			style="
+				display: flex;
+				flex-direction: row;
+				background-color: #e9e9e9;
+				border-radius: 27px;
+				height: 100px;
+				justify-content: space-between;
+				align-items: center;
+				padding: 20px 100px;
+				margin: 0 100px;
+			"
+		>
+			<div style="display: flex; flex-direction: row; align-items: center; gap: 30px;">
+				<img
+					style="height: 80px; border-radius: 10px;"
+					src="${product.imagen}"
+				/>
+				<div style="display: flex; flex-direction: column">
+					<h2>${product.nombre}</h2>
+					${
+						product.almacenamiento
+							? `
+					<span>Capacidad: ${product.almacenamiento} GB </span>
+					`
+							: ``
+					}
+					<div style="display: flex; flex-direction: row; justify-content: start; align-items:center; gap: 10px;">
+						${
+							product.color
+								? `
+							<span>Color</span>
+							<div class="w-box c1m9wykf cgfzz87 c1y9stmp cqixt7s c1hctfk1 c1skgs6s c12c16fo c13j9ftn c1k21dbm ct54u06 c18g2b9i cji22fm co5t2xk c5oagqz"
+							style="width: 20px; height: 20px; background-color: ${product.color.rgba};"
+						></div>`
+								: ``
+						}
+					</div>
+				</div>
+			</div>
+			<div style="display: flex; flex-direction: row; justify-content: start; align-items:center; gap: 10px;">
+				<div><span class="c1joile5 c1mg5cep crtj8fp">$ ${lameMoneyLocal(
+					product.precio
+				)}</span></div>
+				<button class="removeFromCart" data-product-id="${
+					product.id
+				}" style="border: none; background: none; cursor: pointer; width: fit-content;"><img
+					class="w-box c10ddvei c1qrwpo0 iconify x"
+					src="{% icon 'close-large-fill' %}"></button>
+			</div>
+		</div>
+	`;
+	}
+
+	document.addEventListener("DOMContentLoaded", async () => {
+		const carrito = document.querySelector("#Carrito");
+
+		if (localStorage.getItem("products")) {
+			window.cflabs.state
+				.getState()
+				.setProducts(JSON.parse(localStorage.getItem("products") ?? []));
+		}
+		let products = window.cflabs.state.getState().products;
+		console.log(products);
+
+		products.forEach((product) => {
+			carrito.insertAdjacentHTML("beforeend", renderProductCard(product));
+		});
+
+		await window.cflabs.bold.setOrderInfo();
+		window.cflabs.bold.buttonBuilder.apiKey("{% getenv 'BOLD_TEST_PUBKEY' %}");
+
+		Array.from(document.querySelectorAll("input,select")).forEach((inElm) => {
+			inElm.addEventListener("input", (e) => {
+				window.cflabs.bold.setCustomerData();
+				document.querySelector(
+					"[data-bold-button],#BoldBtnPlaceholder"
+				).outerHTML = window.cflabs.bold.buttonBuilder.get();
+			});
+		});
+
+		function renderCart() {
+			const state = window.cflabs.state;
+			const carrito = document.querySelector("#Carrito");
+			const products = state.getState().products;
+
+			carrito.innerHTML = "";
+
+			if (products.length > 0) {
+				products.forEach((product) => {
+					carrito.insertAdjacentHTML("beforeend", renderProductCard(product));
+				});
+			} else {
+				carrito.innerHTML = `
+
+				<span style="width: 100%;
+				display: block;
+				text-align: center;">No hay elementos en el carrito</span>
+
+				`;
+			}
+
+			// Reattach event listeners to the freshly added elements
+			Array.from(carrito.querySelectorAll(".removeFromCart")).forEach(
+				(rfcElm) => {
+					rfcElm.addEventListener("click", () => {
+						state.getState().removeProduct(rfcElm.dataset.productId);
+						window.cflabs.bold.setOrderInfo();
+						localStorage.setItem(
+							"products",
+							JSON.stringify(state.getState().products)
+						);
+						document.querySelector(
+							"[data-bold-button],#BoldBtnPlaceholder"
+						).outerHTML = window.cflabs.bold.buttonBuilder.get();
+
+						// inject bold script
+						const boldButtonScript = document.createElement("script");
+						boldButtonScript.src =
+							"https://checkout.bold.co/library/boldPaymentButton.js";
+						document.querySelector("head").appendChild(boldButtonScript);
+						renderCart(); // Re-render everything after a product is removed
+					});
+				}
+			);
+		}
+
+		renderCart();
+		document.querySelector("[data-bold-button],#BoldBtnPlaceholder").outerHTML =
+			window.cflabs.bold.buttonBuilder.get();
+
+		// inject bold script
+		const boldButtonScript = document.createElement("script");
+		boldButtonScript.src =
+			"https://checkout.bold.co/library/boldPaymentButton.js";
+		document.querySelector("head").appendChild(boldButtonScript);
+
+		function isFormFilled(formElement) {
+			return Array.from(
+				formElement.querySelectorAll("input, select, textarea")
+			).every((field) => {
+				return field.type === "checkbox" || field.type === "radio"
+					? field.checked
+					: field.value.trim() !== "";
+			});
+		}
+
+		setInterval(() => {
+			if (
+				!isFormFilled(document.querySelector('form'))
+			) {
+				document.querySelector("bold-payment-button").style.pointerEvents =
+					"none";
+				document.querySelector("bold-payment-button").style.opacity = "0.5";
+			} else {
+				document.querySelector("bold-payment-button").style.pointerEvents =
+					"unset";
+				document.querySelector("bold-payment-button").style.opacity = "1";
+			}
+		}, 500);
+	});
+</script>
