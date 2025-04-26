@@ -25,14 +25,8 @@ Una pila tecnológica serverless que consta de:
 
 Creado a partir del template eleventy-base-blog v9 para [Eleventy](https://www.11ty.dev/)
 
-### Bold
+### Lo demás
 
-Un proveedor de pagos que permite la integración de una pasarela mediante un web component
-
-### Zustand
-
-Una librería con solo lo mínimo para el manejo de estado en aplicaciones web
-
-### uvu
-
-Una librería ligera y rápida para la creación de pruebas
+- [Bold](https://bold.co/): Un proveedor de pagos que permite la integración de una pasarela mediante un web component
+- [Zustand](https://zustand-demo.pmnd.rs/): Una librería con solo lo mínimo para el manejo de estado en aplicaciones web
+- [uvu](https://github.com/lukeed/uvu): Una librería ligera y rápida para la creación de pruebas
