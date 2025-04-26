@@ -58,9 +58,9 @@ collections:
           widget: "list",
           allow_add: true,
           collapsed: false,
-          label_singular: "Espacio",
+          label_singular: "Almacenamiento",
           fields: [
-            { label: "Espacio", name: "espacio", widget: "text" }
+            { label: "Almacenamiento", name: "almacenamiento", widget: "string" }
           ]
         }
 
