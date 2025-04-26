@@ -1,5 +1,7 @@
 <h1 align='middle'>Sitio Web de iPhoneShop [CFL_SOFT-001]</h1>
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3085c4c2-bf96-4c23-9e6c-e47ec09cd766/deploy-status)](https://app.netlify.com/sites/iphoneshop-co/deploys)
+
 <p align='middle'>
 <img src='./public//img/logo.png'>
 <br>Sitio web para la empresa distribuidora de productos Apple "iPhoneShop" 🍏
