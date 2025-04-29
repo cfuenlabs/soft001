@@ -1,0 +1,42 @@
+{
+  "nombre": "Series 10 46mm",
+  "precio": 2099000,
+  "categoria": "AppleWatch",
+  "tipo": "con colores",
+  "colores": [
+    {
+      "name": "negro",
+      "hex": "#000000"
+    },
+    {
+      "name": "desert titanium",
+      "hex": "#e7d5c5"
+    },
+    {
+      "name": "blanco",
+      "hex": "#FFFFFF"
+    },
+    {
+      "name": "azul pacífico",
+      "hex": "#033357"
+    }
+  ],
+  "imagenes_colores": [
+    {
+      "path": "/public/decap/Apple Watch Series 9 COL1.png",
+      "color": "negro"
+    },
+    {
+      "path": "/public/decap/Apple Watch Series 10 COL3.webp",
+      "color": "desert titanium"
+    },
+    {
+      "path": "/public/decap/Apple Watch Series 10 COL1.png",
+      "color": "blanco"
+    },
+    {
+      "path": "/public/decap/Apple Watch Series 10 COL2.png",
+      "color": "azul pacífico"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "nombre": "",
+  "precio": 1449000,
+  "categoria": "iPhone 12",
+  "almacenamiento": [
+    {
+      "almacenamiento": "64"
+    },
+    {
+      "almacenamiento": "128"
+    }
+  ],
+  "tipo": "con colores",
+  "colores": [
+    {
+      "name": "azul",
+      "hex": "#9bb6cb"
+    },
+    {
+      "name": "blanco",
+      "hex": "#FFFFFF"
+    },
+    {
+      "name": "morado",
+      "hex": "#d0c4db"
+    },
+    {
+      "name": "negro",
+      "hex": "#000000"
+    },
+    {
+      "name": "rojo",
+      "hex": "#e03647"
+    },
+    {
+      "name": "verde",
+      "hex": "#687267"
+    }
+  ],
+  "imagenes_colores": [
+    {
+      "path": "/public/decap/IPhone 12 COL6.png",
+      "color": "azul"
+    },
+    {
+      "path": "/public/decap/IPhone 12 COL3.png",
+      "color": "blanco"
+    },
+    {
+      "path": "/public/decap/IPhone 12 COL2.png",
+      "color": "morado"
+    },
+    {
+      "path": "/public/decap/IPhone 12 COL5.png",
+      "color": "negro"
+    },
+    {
+      "path": "/public/decap/IPhone 12 COL4.png",
+      "color": "rojo"
+    },
+    {
+      "path": "/public/decap/IPhone 12 COL1.png",
+      "color": "verde"
+    }
+  ]
+}

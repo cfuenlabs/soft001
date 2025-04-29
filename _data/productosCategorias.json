@@ -1,948 +1,1361 @@
 [
-	{
-		"nombre": "Air 13 M1",
-		"precio": "3049000",
-		"categoria": "MacBook",
-		"imagen": "Macbook Air 13 M1.png"
-	},
-	{
-		"nombre": "Air 13 M3",
-		"precio": "4699000",
-		"categoria": "MacBook",
-		"imagen": "Macbook Air 13 M3.png"
-	},
-	{
-		"nombre": "Pro M1",
-		"precio": "2949000",
-		"categoria": "MacBook",
-		"imagen": "Macbook Pro M1.png"
-	},
-	{
-		"nombre": "Pro 13″ 6th M4",
-		"precio": "5199000",
-		"categoria": "iPad",
-		"imagen": "ipad pro 13.jpg"
-	},
-	{
-		"nombre": "Pro 11″ 6th M4",
-		"precio": "4399000",
-		"categoria": "iPad",
-		"imagen": "iPad Pro 11 6th M4 1COL2.png"
-	},
-	{
-		"nombre": "Pro 12.9″ 6th M4",
-		"precio": "2949000",
-		"categoria": "iPad",
-		"imagen": "iPad Pro 11 6th M4 1COL1.png"
-	},
-	{
-		"nombre": "Pro 10.9″ 10th Wifi",
-		"precio": "1449000",
-		"categoria": "iPad",
-		"imagen": "iPad 10th 10.9 wifi 1.png"
-	},
-	{
-		"nombre": "Pro 10.2″ 9th Wifi",
-		"precio": "1449000",
-		"categoria": "iPad",
-		"imagen": "iPad 9th 10.2 wif 1.png"
-	},
-	{
-		"nombre": "4ta Gen",
-		"precio": "599000",
-		"categoria": "AirPods",
-		"imagen": "airpods 4 1.png"
-	},
-	{
-		"nombre": "3ra Gen",
-		"precio": "579000",
-		"categoria": "AirPods",
-		"imagen": "airpods 3 generacion 1.png"
-	},
-	{
-		"nombre": "2da Gen",
-		"precio": "489000",
-		"categoria": "AirPods",
-		"imagen": "airpods 2 1.png"
-	},
-	{
-		"nombre": "Lighting",
-		"precio": "380000",
-		"categoria": "AirPods",
-		"imagen": "earpods lighting 1.png"
-	},
-	{
-		"nombre": "Series 9 45mm",
-		"precio": "1699000",
-		"categoria": "AppleWatch",
-		"colores": [
-			"black",
-			"desert titanium",
-			"white",
-			"pink",
-			"red",
-			"silver",
-			"pacific blue"
-		],
-		"imagenes": [
-			{
-				"path": "Apple Watch Series 9 COL1.png",
-				"color": "black"
-			},
-			{
-				"path": "Apple Watch Series 9 COL2.png",
-				"color": "desert titanium"
-			},
-			{
-				"path": "Apple Watch Series 9 COL3.png",
-				"color": "white"
-			},
-			{
-				"path": "Apple Watch Series 9 COL4.png",
-				"color": "pink"
-			},
-			{
-				"path": "Apple Watch Series 9 COL6.png",
-				"color": "white"
-			},
-			{
-				"path": "Apple Watch Series 9 COL7.png",
-				"color": "pacific blue"
-			},
-			{
-				"path": "Apple Watch Series 9 COL8.png",
-				"color": "silver"
-			}
-		]
-	},
-	{
-		"nombre": "Series 10 42mm",
-		"precio": "1999000",
-		"categoria": "AppleWatch",
-		"colores": [
-			"black",
-			"desert titanium",
-			"white",
-			"pacific blue"
-		],
-		"imagenes": [
-			{
-				"path": "Apple Watch Series 9 COL1.png",
-				"color": "black"
-			},
-			{
-				"path": "Apple Watch Series 10 COL3.webp",
-				"color": "desert titanium"
-			},
-			{
-				"path": "Apple Watch Series 10 COL1.png",
-				"color": "white"
-			},
-			{
-				"path": "Apple Watch Series 10 COL2.png",
-				"color": "pacific blue"
-			}
-		]
-	},
-	{
-		"nombre": "Series 10 46mm",
-		"precio": "2099000",
-		"categoria": "AppleWatch",
-		"colores": [
-			"black",
-			"desert titanium",
-			"white",
-			"pacific blue"
-		],
-		"imagenes": [
-			{
-				"path": "Apple Watch Series 9 COL1.png",
-				"color": "black"
-			},
-			{
-				"path": "Apple Watch Series 10 COL3.webp",
-				"color": "desert titanium"
-			},
-			{
-				"path": "Apple Watch Series 10 COL1.png",
-				"color": "white"
-			},
-			{
-				"path": "Apple Watch Series 10 COL2.png",
-				"color": "pacific blue"
-			}
-		]
-	},
-	{
-		"nombre": "Ultra 2 49mm",
-		"precio": "3049000",
-		"categoria": "AppleWatch",
-		"colores": [
-			"black",
-			"white"
-		],
-		"imagenes": [
-			{
-				"path": "Apple Watch Ultra 2 COL1.png",
-				"color": "black"
-			},
-			{
-				"path": "Apple Watch Ultra 2 COL2.png",
-				"color": "white"
-			}
-		]
-	},
-	{
-		"nombre": "Cargador Apple iPhone USB-C + Cable USB-C a Lighting",
-		"precio": "149999",
-		"categoria": "Accesorios",
-		"imagen": "cargador carga rapida iphone_preview_rev_1 2.png"
-	},
-	{
-		"nombre": "Cable Datos Tipo C to Lighting Apple",
-		"precio": "59999",
-		"categoria": "Accesorios",
-		"imagen": "USB-C to lighting cable 1.png"
-	},
-	{
-		"nombre": "Cable Datos Tipo C to Tipo C Apple para MacBook Pro",
-		"precio": "69999",
-		"categoria": "Accesorios",
-		"imagen": "Cable Datos Tipo C to Tipo C Apple para MacBook Pro 1.png"
-	},
-	{
-		"nombre": "Cable Datos USB to Lighting Apple iPhone",
-		"precio": "49999",
-		"categoria": "Accesorios",
-		"imagen": "Cable Datos USB to Lighting Apple iPhone 1.png"
-	},
-	{
-		"nombre": "Cargador Apple iPhone USB Lighting",
-		"precio": "39999",
-		"categoria": "Accesorios",
-		"imagen": "Cargador Apple iPhone USB Lighting 1.png"
-	},
-	{
-		"nombre": "Cable de 30 pines Apple",
-		"precio": "39999",
-		"categoria": "Accesorios",
-		"imagen": "Cable de 30 Pines Apple 1.png"
-	},
-	{
-		"nombre": "Pro Max",
-		"precio": "5799000",
-		"categoria": "iPhone 16",
-		"almacenamiento": ["128", "256"],
-		"colores": [
-			"desert titanium",
-			"black titanium",
-			"natural titanium",
-			"white titanium"
-		],
-		"imagenes": [
-			{
-				"path": "iphone 16 Pro COL2.png",
-				"color": "white titanium"
-			},
-			{
-				"path": "iphone 16 Pro COL3.png",
-				"color": "black titanium"
-			},
-			{
-				"path": "iphone 16 Pro COL3.png",
-				"color": "natural titanium"
-			},
-			{
-				"path": "iphone 16 Pro COL1.png",
-				"color": "desert titanium"
-			}
-		]
-	},
-	{
-		"nombre": "Pro",
-		"precio": "5099000",
-		"categoria": "iPhone 16",
-		"almacenamiento": ["256"],
-		"colores": [
-			"desert titanium",
-			"black titanium",
-			"natural titanium",
-			"white titanium"
-		],
-		"imagenes": [
-			{
-				"path": "iphone 16 Pro COL2.png",
-				"color": "white titanium"
-			},
-			{
-				"path": "iphone 16 Pro COL3.png",
-				"color": "black titanium"
-			},
-			{
-				"path": "iphone 16 Pro COL3.png",
-				"color": "natural titanium"
-			},
-			{
-				"path": "iphone 16 Pro COL1.png",
-				"color": "desert titanium"
-			}
-		]
-	},
-	{
-		"nombre": "Plus",
-		"precio": "4799000",
-		"categoria": "iPhone 16",
-		"almacenamiento": ["128"],
-		"colores": [
-			"ultramarine",
-			"teal",
-			"pink",
-			"white",
-			"black"
-		],
-		"imagenes": [
-			{
-				"path": "iphone 16 COL4.png",
-				"color": "ultramarine"
-			},
-			{
-				"path": "iphone 16 COL5.jpg",
-				"color": "teal"
-			},
-			{
-				"path": "iphone 16 COL1.png",
-				"color": "pink"
-			},
-			{
-				"path": "iphone 16 COL2.png",
-				"color": "white"
-			},
-			{
-				"path": "iphone 16 COL3.png",
-				"color": "black"
-			}
-		]
-	},
-	{
-		"nombre": "",
-		"precio": "3749000",
-		"categoria": "iPhone 16",
-		"almacenamiento": ["128"],
-		"colores": [
-			"ultramarine",
-			"teal",
-			"pink",
-			"white",
-			"black"
-		],
-		"imagenes": [
-			{
-				"path": "iphone 16 COL4.png",
-				"color": "ultramarine"
-			},
-			{
-				"path": "iphone 16 COL5.jpg",
-				"color": "teal"
-			},
-			{
-				"path": "iphone 16 COL1.png",
-				"color": "pink"
-			},
-			{
-				"path": "iphone 16 COL2.png",
-				"color": "white"
-			},
-			{
-				"path": "iphone 16 COL3.png",
-				"color": "black"
-			}
-		]
-	},
-	{
-		"nombre": "Pro Max",
-		"precio": "4199000",
-		"categoria": "iPhone 15",
-		"almacenamiento": ["256"],
-		"colores": [
-			"black titanium",
-			"blue titanium",
-			"titanium",
-			"white titanium"
-		],
-		"imagenes": [
-			{
-				"path": "iphone 15 pro COL1.png",
-				"color": "black titanium"
-			},
-			{
-				"path": "iphone 15 pro COL2.png",
-				"color": "blue titanium"
-			},
-			{
-				"path": "iphone 15 pro COL3.png",
-				"color": "titanium"
-			},
-			{
-				"path": "iphone 15 pro COL4.png",
-				"color": "white titanium"
-			}
-		]
-	},
-	{
-		"nombre": "Pro",
-		"precio": "3599000",
-		"categoria": "iPhone 15",
-		"almacenamiento": ["128", "256"],
-		"colores": [
-			"black titanium",
-			"blue titanium",
-			"titanium",
-			"white titanium"
-		],
-		"imagenes": [
-			{
-				"path": "iphone 15 pro COL1.png",
-				"color": "black titanium"
-			},
-			{
-				"path": "iphone 15 pro COL2.png",
-				"color": "blue titanium"
-			},
-			{
-				"path": "iphone 15 pro COL3.png",
-				"color": "titanium"
-			},
-			{
-				"path": "iphone 15 pro COL4.png",
-				"color": "white titanium"
-			}
-		]
-	},
-	{
-		"nombre": "",
-		"precio": "2799000",
-		"categoria": "iPhone 15",
-		"almacenamiento": ["128"],
-		"colores": [
-			"yellow",
-			"black",
-			"pink",
-			"green"
-		],
-		"imagenes": [
-			{
-				"path": "IPhone 15 COL4.png",
-				"color": "yellow"
-			},
-			{
-				"path": "IPhone 15 COL2.png",
-				"color": "black"
-			},
-			{
-				"path": "IPhone 15 COL3.png",
-				"color": "pink"
-			},
-			{
-				"path": "IPhone 15 COL1.png",
-				"color": "green"
-			}
-		]
-	},
-	{
-		"nombre": "Pro Max",
-		"precio": "3549000",
-		"categoria": "iPhone 14",
-		"almacenamiento": ["128", "256"],
-		"colores": [
-			"deep purple",
-			"gold",
-			"silver",
-			"space black"
-		],
-		"imagenes": [
-			{
-				"path": "IPhone 14 pro COL2.png",
-				"color": "deep purple"
-			},
-			{
-				"path": "iphone 14 pro COL4.png",
-				"color": "gold"
-			},
-			{
-				"path": "iphone 14 pro COL1.png",
-				"color": "silver"
-			},
-			{
-				"path": "iphone 14 pro COL3.png",
-				"color": "space black"
-			}
-		]
-	},
-	{
-		"nombre": "Pro",
-		"precio": "3099000",
-		"categoria": "iPhone 14",
-		"almacenamiento": ["128", "256"],
-		"colores": [
-			"deep purple",
-			"gold",
-			"silver",
-			"space black"
-		],
-		"imagenes": [
-			{
-				"path": "IPhone 14 pro COL2.png",
-				"color": "deep purple"
-			},
-			{
-				"path": "iphone 14 pro COL4.png",
-				"color": "gold"
-			},
-			{
-				"path": "iphone 14 pro COL1.png",
-				"color": "silver"
-			},
-			{
-				"path": "iphone 14 pro COL3.png",
-				"color": "space black"
-			}
-		]
-	},
-	{
-		"nombre": "Plus",
-		"precio": "2499000",
-		"categoria": "iPhone 14",
-		"almacenamiento": ["128", "256"],
-		"colores": [
-			"blue",
-			"white",
-			"purple",
-			"red"
-		],
-		"imagenes": [
-			{
-				"path": "iphone 14 COL2.png",
-				"color": "white"
-			},
-			{
-				"path": "iphone 14 COL3.png",
-				"color": "blue"
-			},
-			{
-				"path": "iphone 14 COL1.png",
-				"color": "purple"
-			},
-			{
-				"path": "iphone 14 COL4.png",
-				"color": "red"
-			}
-		]
-	},
-	{
-		"nombre": "",
-		"precio": "2299000",
-		"categoria": "iPhone 14",
-		"almacenamiento": ["128", "256"],
-		"colores": [
-			"blue",
-			"white",
-			"purple",
-			"red"
-		],
-		"imagenes": [
-			{
-				"path": "iphone 14 COL2.png",
-				"color": "white"
-			},
-			{
-				"path": "iphone 14 COL3.png",
-				"color": "blue"
-			},
-			{
-				"path": "iphone 14 COL1.png",
-				"color": "purple"
-			},
-			{
-				"path": "iphone 14 COL4.png",
-				"color": "red"
-			}
-		]
-	},
-	{
-		"nombre": "Pro Max",
-		"precio": "2749000",
-		"categoria": "iPhone 13",
-		"almacenamiento": ["128", "256"],
-		"colores": [
-			"gold",
-			"alpine green",
-			"sierra blue",
-			"graphite",
-			"silver"
-		],
-		"imagenes": [
-			{
-				"path": "IPhone 13 pro COL5.png",
-				"color": "silver"
-			},
-			{
-				"path": "IPhone 13 pro COL2.png",
-				"color": "alpine green"
-			},
-			{
-				"path": "IPhone 13 pro COL3.png",
-				"color": "sierra blue"
-			},
-			{
-				"path": "IPhone 13 pro COL4.png",
-				"color": "graphite"
-			},
-			{
-				"path": "IPhone 13 pro COL1.png",
-				"color": "gold"
-			}
-		]
-	},
-	{
-		"nombre": "Pro",
-		"precio": "2399000",
-		"categoria": "iPhone 13",
-		"almacenamiento": ["128", "256"],
-		"colores": [
-			"gold",
-			"alpine green",
-			"sierra blue",
-			"graphite",
-			"silver"
-		],
-		"imagenes": [
-			{
-				"path": "IPhone 13 pro COL5.png",
-				"color": "silver"
-			},
-			{
-				"path": "IPhone 13 pro COL2.png",
-				"color": "alpine green"
-			},
-			{
-				"path": "IPhone 13 pro COL3.png",
-				"color": "sierra blue"
-			},
-			{
-				"path": "IPhone 13 pro COL4.png",
-				"color": "graphite"
-			},
-			{
-				"path": "IPhone 13 pro COL1.png",
-				"color": "gold"
-			}
-		]
-	},
-	{
-		"nombre": "Mini",
-		"precio": "1899000",
-		"categoria": "iPhone 13",
-		"almacenamiento": ["128", "256"],
-		"colores": [
-			"blue",
-			"white",
-			"black",
-			"red",
-			"pink",
-			"green"
-		],
-		"imagenes": [
-			{
-				"path": "IPhone 13 COL2.png",
-				"color": "blue"
-			},
-			{
-				"path": "IPhone 13 COL1.png",
-				"color": "white"
-			},
-			{
-				"path": "IPhone 13 COL3.png",
-				"color": "black"
-			},
-			{
-				"path": "IPhone 13 COL5.png",
-				"color": "pink"
-			},
-			{
-				"path": "IPhone 13 COL4.png",
-				"color": "green"
-			}
-		]
-	},
-	{
-		"nombre": "",
-		"precio": "1899000",
-		"categoria": "iPhone 13",
-		"almacenamiento": ["128"],
-		"colores": [
-			"blue",
-			"white",
-			"black",
-			"red",
-			"pink",
-			"green"
-		],
-		"imagenes": [
-			{
-				"path": "IPhone 13 COL2.png",
-				"color": "blue"
-			},
-			{
-				"path": "IPhone 13 COL1.png",
-				"color": "white"
-			},
-			{
-				"path": "IPhone 13 COL3.png",
-				"color": "black"
-			},
-			{
-				"path": "IPhone 13 COL5.png",
-				"color": "pink"
-			},
-			{
-				"path": "IPhone 13 COL4.png",
-				"color": "green"
-			}
-		]
-	},
-	{
-		"nombre": "Pro Max",
-		"precio": "2149000",
-		"categoria": "iPhone 12",
-		"almacenamiento": ["128", "256"],
-		"colores": [
-			"gold",
-			"graphite",
-			"pacific blue",
-			"silver"
-		],
-		"imagenes": [
-			{
-				"path": "IPhone 12 Pro COL4.png",
-				"color": "gold"
-			},
-			{
-				"path": "IPhone 12 Pro COL3.png",
-				"color": "silver"
-			},
-			{
-				"path": "IPhone 12 Pro COL1.png",
-				"color": "pacific blue"
-			},
-			{
-				"path": "IPhone 12 Pro COL2.png",
-				"color": "graphite"
-			}
-		]
-	},
-	{
-		"nombre": "Pro",
-		"precio": "1749000",
-		"categoria": "iPhone 12",
-		"almacenamiento": ["128", "256"],
-		"colores": [
-			"gold",
-			"graphite",
-			"pacific blue",
-			"silver"
-		],
-		"imagenes": [
-			{
-				"path": "IPhone 12 Pro COL4.png",
-				"color": "gold"
-			},
-			{
-				"path": "IPhone 12 Pro COL3.png",
-				"color": "silver"
-			},
-			{
-				"path": "IPhone 12 Pro COL1.png",
-				"color": "pacific blue"
-			},
-			{
-				"path": "IPhone 12 Pro COL2.png",
-				"color": "graphite"
-			}
-		]
-	},
-	{
-		"nombre": "Mini",
-		"precio": "1299000",
-		"categoria": "iPhone 12",
-		"almacenamiento": ["64"],
-		"colores": [
-			"blue",
-			"white",
-			"purple",
-			"black",
-			"red",
-			"green"
-		],
-		"imagenes": [
-			{
-				"path": "IPhone 12 COL6.png",
-				"color": "blue"
-			},
-			{
-				"path": "IPhone 12 COL3.png",
-				"color": "white"
-			},
-			{
-				"path": "IPhone 12 COL2.png",
-				"color": "purple"
-			},
-			{
-				"path": "IPhone 12 COL5.png",
-				"color": "black"
-			},
-			{
-				"path": "IPhone 12 COL4.png",
-				"color": "red"
-			},
-			{
-				"path": "IPhone 12 COL1.png",
-				"color": "green"
-			}
-		]
-	},
-	{
-		"nombre": "",
-		"precio": "1449000",
-		"categoria": "iPhone 12",
-		"almacenamiento": ["64", "128"],
-		"colores": [
-			"blue",
-			"white",
-			"purple",
-			"black",
-			"red",
-			"green"
-		],
-		"imagenes": [
-			{
-				"path": "IPhone 12 COL6.png",
-				"color": "blue"
-			},
-			{
-				"path": "IPhone 12 COL3.png",
-				"color": "white"
-			},
-			{
-				"path": "IPhone 12 COL2.png",
-				"color": "purple"
-			},
-			{
-				"path": "IPhone 12 COL5.png",
-				"color": "black"
-			},
-			{
-				"path": "IPhone 12 COL4.png",
-				"color": "red"
-			},
-			{
-				"path": "IPhone 12 COL1.png",
-				"color": "green"
-			}
-		]
-	},
-	{
-		"nombre": "Pro Max",
-		"precio": "1599000",
-		"categoria": "iPhone 11",
-		"almacenamiento": ["64", "256"],
-		"colores": [
-			"gold",
-			"Midnight green",
-			"space gray",
-			"silver"
-		],
-		"imagenes": [
-			{
-				"path": "IPhone 11 Pro COL1.png",
-				"color": "gold"
-			},
-			{
-				"path": "IPhone 11 Pro COL2.png",
-				"color": "Midnight green"
-			},
-			{
-				"path": "IPhone 11 Pro COL3.png",
-				"color": "space gray"
-			},
-			{
-				"path": "IPhone 11 Pro COL4.png",
-				"color": "silver"
-			}
-		]
-	},
-	{
-		"nombre": "Pro",
-		"precio": "1399000",
-		"categoria": "iPhone 11",
-		"almacenamiento": ["64", "256"],
-		"colores": [
-			"gold",
-			"Midnight green",
-			"space gray",
-			"silver"
-		],
-		"imagenes": [
-			{
-				"path": "IPhone 11 Pro COL1.png",
-				"color": "gold"
-			},
-			{
-				"path": "IPhone 11 Pro COL2.png",
-				"color": "Midnight green"
-			},
-			{
-				"path": "IPhone 11 Pro COL3.png",
-				"color": "space gray"
-			},
-			{
-				"path": "IPhone 11 Pro COL4.png",
-				"color": "silver"
-			}
-		]
-	},
-	{
-		"nombre": "",
-		"precio": "1149000",
-		"categoria": "iPhone 11",
-		"almacenamiento": ["64", "128"],
-		"colores": [
-			"yellow",
-			"purple",
-			"black",
-			"red",
-			"green"
-		],
-		"imagenes": [
-			{
-				"path": "IPhone 11 COL1.png",
-				"color": "yellow"
-			},
-			{
-				"path": "IPhone 11 COL2.png",
-				"color": "purple"
-			},
-			{
-				"path": "IPhone 11 COL3.png",
-				"color": "black"
-			},
-			{
-				"path": "IPhone 11 COL4.png",
-				"color": "red"
-			},
-			{
-				"path": "IPhone 11 COL5.png",
-				"color": "green"
-			}
-		]
-	}
+  {
+    "nombre": "Cable Datos Tipo C to Lighting Apple",
+    "precio": "59999",
+    "categoria": "Accesorios",
+    "imagen": "/decap/USB-C to lighting cable 1.png"
+  },
+  {
+    "nombre": "Cable Datos Tipo C to Tipo C Apple para MacBook Pro",
+    "precio": "69999",
+    "categoria": "Accesorios",
+    "imagen": "/decap/Cable Datos Tipo C to Tipo C Apple para MacBook Pro 1.png"
+  },
+  {
+    "nombre": "Cable Datos USB to Lighting Apple iPhone",
+    "precio": "49999",
+    "categoria": "Accesorios",
+    "imagen": "/decap/Cable Datos USB to Lighting Apple iPhone 1.png"
+  },
+  {
+    "nombre": "Cable de 30 pines Apple",
+    "precio": "39999",
+    "categoria": "Accesorios",
+    "imagen": "/decap/Cable de 30 Pines Apple 1.png"
+  },
+  {
+    "nombre": "Cargador Apple iPhone USB-C + Cable USB-C a Lighting",
+    "precio": "149999",
+    "categoria": "Accesorios",
+    "imagen": "/decap/cargador carga rapida iphone_preview_rev_1 2.png"
+  },
+  {
+    "nombre": "Cargador Apple iPhone USB Lighting",
+    "precio": "39999",
+    "categoria": "Accesorios",
+    "imagen": "/decap/Cargador Apple iPhone USB Lighting 1.png"
+  },
+  {
+    "nombre": "2da Gen",
+    "precio": "489000",
+    "categoria": "AirPods",
+    "imagen": "/decap/airpods 2 1.png"
+  },
+  {
+    "nombre": "3ra Gen",
+    "precio": "579000",
+    "categoria": "AirPods",
+    "imagen": "/decap/airpods 3 generacion 1.png"
+  },
+  {
+    "nombre": "4ta Gen",
+    "precio": "599000",
+    "categoria": "AirPods",
+    "imagen": "/decap/airpods 4 1.png"
+  },
+  {
+    "nombre": "Lighting",
+    "precio": "380000",
+    "categoria": "AirPods",
+    "imagen": "/decap/earpods lighting 1.png"
+  },
+  {
+    "nombre": "Series 10 42mm",
+    "precio": "1999000",
+    "categoria": "AppleWatch",
+    "colores": [
+      {
+        "name": "negro",
+        "hex": "#000000"
+      },
+      {
+        "name": "desert-titanium",
+        "hex": "#e7d5c5"
+      },
+      {
+        "name": "blanco",
+        "hex": "#FFFFFF"
+      },
+      {
+        "name": "azul-pacífico",
+        "hex": "#033357"
+      }
+    ],
+    "imagenes": [
+      {
+        "path": "/decap/Apple Watch Series 9 COL1.png",
+        "color": "negro"
+      },
+      {
+        "path": "/decap/Apple Watch Series 10 COL3.webp",
+        "color": "desert-titanium"
+      },
+      {
+        "path": "/decap/Apple Watch Series 10 COL1.png",
+        "color": "blanco"
+      },
+      {
+        "path": "/decap/Apple Watch Series 10 COL2.png",
+        "color": "azul-pacífico"
+      }
+    ]
+  },
+  {
+    "nombre": "Series 10 46mm",
+    "precio": "2099000",
+    "categoria": "AppleWatch",
+    "colores": [
+      {
+        "name": "negro",
+        "hex": "#000000"
+      },
+      {
+        "name": "desert-titanium",
+        "hex": "#e7d5c5"
+      },
+      {
+        "name": "blanco",
+        "hex": "#FFFFFF"
+      },
+      {
+        "name": "azul-pacífico",
+        "hex": "#033357"
+      }
+    ],
+    "imagenes": [
+      {
+        "path": "/decap/Apple Watch Series 9 COL1.png",
+        "color": "negro"
+      },
+      {
+        "path": "/decap/Apple Watch Series 10 COL3.webp",
+        "color": "desert-titanium"
+      },
+      {
+        "path": "/decap/Apple Watch Series 10 COL1.png",
+        "color": "blanco"
+      },
+      {
+        "path": "/decap/Apple Watch Series 10 COL2.png",
+        "color": "azul-pacífico"
+      }
+    ]
+  },
+  {
+    "nombre": "Series 9 45mm",
+    "precio": "1699000",
+    "categoria": "AppleWatch",
+    "colores": [
+      {
+        "name": "negro",
+        "hex": "#000000"
+      },
+      {
+        "name": "desert-titanium",
+        "hex": "#e7d5c5"
+      },
+      {
+        "name": "blanco",
+        "hex": "#FFFFFF"
+      },
+      {
+        "name": "rosa",
+        "hex": "#f3b3dd"
+      },
+      {
+        "name": "rojo",
+        "hex": "#e03647"
+      },
+      {
+        "name": "plata",
+        "hex": "#eff1f0"
+      },
+      {
+        "name": "azul-pacífico",
+        "hex": "#033357"
+      }
+    ],
+    "imagenes": [
+      {
+        "path": "/decap/Apple Watch Series 9 COL1.png",
+        "color": "negro"
+      },
+      {
+        "path": "/decap/Apple Watch Series 9 COL2.png",
+        "color": "desert-titanium"
+      },
+      {
+        "path": "/decap/Apple Watch Series 9 COL3.png",
+        "color": "blanco"
+      },
+      {
+        "path": "/decap/Apple Watch Series 9 COL4.png",
+        "color": "rosa"
+      },
+      {
+        "path": "/decap/Apple Watch Series 9 COL6.png",
+        "color": "white"
+      },
+      {
+        "path": "/decap/Apple Watch Series 9 COL7.png",
+        "color": "azul-pacífico"
+      },
+      {
+        "path": "/decap/Apple Watch Series 9 COL8.png",
+        "color": "plata"
+      }
+    ]
+  },
+  {
+    "nombre": "Ultra 2 49mm",
+    "precio": "3049000",
+    "categoria": "AppleWatch",
+    "colores": [
+      {
+        "name": "negro",
+        "hex": "#000000"
+      },
+      {
+        "name": "blanco",
+        "hex": "#FFFFFF"
+      }
+    ],
+    "imagenes": [
+      {
+        "path": "/decap/Apple Watch Ultra 2 COL1.png",
+        "color": "negro"
+      },
+      {
+        "path": "/decap/Apple Watch Ultra 2 COL2.png",
+        "color": "blanco"
+      }
+    ]
+  },
+  {
+    "nombre": "Pro 10.2″ 9th Wifi",
+    "precio": "1449000",
+    "categoria": "iPad",
+    "imagen": "/decap/iPad 9th 10.2 wif 1.png"
+  },
+  {
+    "nombre": "Pro 10.9″ 10th Wifi",
+    "precio": "1449000",
+    "categoria": "iPad",
+    "imagen": "/decap/iPad 10th 10.9 wifi 1.png"
+  },
+  {
+    "nombre": "Pro 11″ 6th M4",
+    "precio": "4399000",
+    "categoria": "iPad",
+    "imagen": "/decap/iPad Pro 11 6th M4 1COL2.png"
+  },
+  {
+    "nombre": "Pro 12.9″ 6th M4",
+    "precio": "2949000",
+    "categoria": "iPad",
+    "imagen": "/decap/iPad Pro 11 6th M4 1COL1.png"
+  },
+  {
+    "nombre": "Pro 13″ 6th M4",
+    "precio": "5199000",
+    "categoria": "iPad",
+    "imagen": "/decap/ipad pro 13.jpg"
+  },
+  {
+    "nombre": "",
+    "precio": "1149000",
+    "categoria": "iPhone 11",
+    "almacenamiento": [
+      "64",
+      "128"
+    ],
+    "colores": [
+      {
+        "name": "amarillo",
+        "hex": "#fef492"
+      },
+      {
+        "name": "morado",
+        "hex": "#d0c4db"
+      },
+      {
+        "name": "negro",
+        "hex": "#000000"
+      },
+      {
+        "name": "rojo",
+        "hex": "#e03647"
+      },
+      {
+        "name": "verde",
+        "hex": "#687267"
+      }
+    ],
+    "imagenes": [
+      {
+        "path": "/decap/IPhone 11 COL1.png",
+        "color": "amarillo"
+      },
+      {
+        "path": "/decap/IPhone 11 COL2.png",
+        "color": "morado"
+      },
+      {
+        "path": "/decap/IPhone 11 COL3.png",
+        "color": "negro"
+      },
+      {
+        "path": "/decap/IPhone 11 COL4.png",
+        "color": "rojo"
+      },
+      {
+        "path": "/decap/IPhone 11 COL5.png",
+        "color": "verde"
+      }
+    ]
+  },
+  {
+    "nombre": "Pro Max",
+    "precio": "1599000",
+    "categoria": "iPhone 11",
+    "almacenamiento": [
+      "64",
+      "256"
+    ],
+    "colores": [
+      {
+        "name": "dorado",
+        "hex": "#f4e8ce"
+      },
+      {
+        "name": "midnight-green",
+        "hex": "#252e29"
+      },
+      {
+        "name": "space-gray",
+        "hex": "#5b5754"
+      },
+      {
+        "name": "plata",
+        "hex": "#eff1f0"
+      }
+    ],
+    "imagenes": [
+      {
+        "path": "/decap/IPhone 11 Pro COL1.png",
+        "color": "dorado"
+      },
+      {
+        "path": "/decap/IPhone 11 Pro COL2.png",
+        "color": "midnight-green"
+      },
+      {
+        "path": "/decap/IPhone 11 Pro COL3.png",
+        "color": "space-gray"
+      },
+      {
+        "path": "/decap/IPhone 11 Pro COL4.png",
+        "color": "plata"
+      }
+    ]
+  },
+  {
+    "nombre": "Pro",
+    "precio": "1399000",
+    "categoria": "iPhone 11",
+    "almacenamiento": [
+      "64",
+      "256"
+    ],
+    "colores": [
+      {
+        "name": "dorado",
+        "hex": "#f4e8ce"
+      },
+      {
+        "name": "midnight-green",
+        "hex": "#252e29"
+      },
+      {
+        "name": "space-gray",
+        "hex": "#5b5754"
+      },
+      {
+        "name": "plata",
+        "hex": "#eff1f0"
+      }
+    ],
+    "imagenes": [
+      {
+        "path": "/decap/IPhone 11 Pro COL1.png",
+        "color": "dorado"
+      },
+      {
+        "path": "/decap/IPhone 11 Pro COL2.png",
+        "color": "midnight-green"
+      },
+      {
+        "path": "/decap/IPhone 11 Pro COL3.png",
+        "color": "space-gray"
+      },
+      {
+        "path": "/decap/IPhone 11 Pro COL4.png",
+        "color": "plata"
+      }
+    ]
+  },
+  {
+    "nombre": "",
+    "precio": "1449000",
+    "categoria": "iPhone 12",
+    "almacenamiento": [
+      "64",
+      "128"
+    ],
+    "colores": [
+      {
+        "name": "azul",
+        "hex": "#9bb6cb"
+      },
+      {
+        "name": "blanco",
+        "hex": "#FFFFFF"
+      },
+      {
+        "name": "morado",
+        "hex": "#d0c4db"
+      },
+      {
+        "name": "negro",
+        "hex": "#000000"
+      },
+      {
+        "name": "rojo",
+        "hex": "#e03647"
+      },
+      {
+        "name": "verde",
+        "hex": "#687267"
+      }
+    ],
+    "imagenes": [
+      {
+        "path": "/decap/IPhone 12 COL6.png",
+        "color": "azul"
+      },
+      {
+        "path": "/decap/IPhone 12 COL3.png",
+        "color": "blanco"
+      },
+      {
+        "path": "/decap/IPhone 12 COL2.png",
+        "color": "morado"
+      },
+      {
+        "path": "/decap/IPhone 12 COL5.png",
+        "color": "negro"
+      },
+      {
+        "path": "/decap/IPhone 12 COL4.png",
+        "color": "rojo"
+      },
+      {
+        "path": "/decap/IPhone 12 COL1.png",
+        "color": "verde"
+      }
+    ]
+  },
+  {
+    "nombre": "Mini",
+    "precio": "1299000",
+    "categoria": "iPhone 12",
+    "almacenamiento": [
+      "64"
+    ],
+    "colores": [
+      {
+        "name": "azul",
+        "hex": "#9bb6cb"
+      },
+      {
+        "name": "blanco",
+        "hex": "#FFFFFF"
+      },
+      {
+        "name": "morado",
+        "hex": "#d0c4db"
+      },
+      {
+        "name": "negro",
+        "hex": "#000000"
+      },
+      {
+        "name": "rojo",
+        "hex": "#e03647"
+      },
+      {
+        "name": "verde",
+        "hex": "#687267"
+      }
+    ],
+    "imagenes": [
+      {
+        "path": "/decap/IPhone 12 COL6.png",
+        "color": "azul"
+      },
+      {
+        "path": "/decap/IPhone 12 COL3.png",
+        "color": "blanco"
+      },
+      {
+        "path": "/decap/IPhone 12 COL2.png",
+        "color": "morado"
+      },
+      {
+        "path": "/decap/IPhone 12 COL5.png",
+        "color": "negro"
+      },
+      {
+        "path": "/decap/IPhone 12 COL4.png",
+        "color": "rojo"
+      },
+      {
+        "path": "/decap/IPhone 12 COL1.png",
+        "color": "verde"
+      }
+    ]
+  },
+  {
+    "nombre": "Pro Max",
+    "precio": "2149000",
+    "categoria": "iPhone 12",
+    "almacenamiento": [
+      "128",
+      "256"
+    ],
+    "colores": [
+      {
+        "name": "dorado",
+        "hex": "#f4e8ce"
+      },
+      {
+        "name": "graphite",
+        "hex": "#5f5e5a"
+      },
+      {
+        "name": "azul-pacífico",
+        "hex": "#033357"
+      },
+      {
+        "name": "plata",
+        "hex": "#eff1f0"
+      }
+    ],
+    "imagenes": [
+      {
+        "path": "/decap/IPhone 12 Pro COL4.png",
+        "color": "dorado"
+      },
+      {
+        "path": "/decap/IPhone 12 Pro COL3.png",
+        "color": "plata"
+      },
+      {
+        "path": "/decap/IPhone 12 Pro COL1.png",
+        "color": "azul-pacífico"
+      },
+      {
+        "path": "/decap/IPhone 12 Pro COL2.png",
+        "color": "graphite"
+      }
+    ]
+  },
+  {
+    "nombre": "Pro",
+    "precio": "1749000",
+    "categoria": "iPhone 12",
+    "almacenamiento": [
+      "128",
+      "256"
+    ],
+    "colores": [
+      {
+        "name": "dorado",
+        "hex": "#f4e8ce"
+      },
+      {
+        "name": "graphite",
+        "hex": "#5f5e5a"
+      },
+      {
+        "name": "azul-pacífico",
+        "hex": "#033357"
+      },
+      {
+        "name": "plata",
+        "hex": "#eff1f0"
+      }
+    ],
+    "imagenes": [
+      {
+        "path": "/decap/IPhone 12 Pro COL4.png",
+        "color": "dorado"
+      },
+      {
+        "path": "/decap/IPhone 12 Pro COL3.png",
+        "color": "plata"
+      },
+      {
+        "path": "/decap/IPhone 12 Pro COL1.png",
+        "color": "azul-pacífico"
+      },
+      {
+        "path": "/decap/IPhone 12 Pro COL2.png",
+        "color": "graphite"
+      }
+    ]
+  },
+  {
+    "nombre": "",
+    "precio": "1899000",
+    "categoria": "iPhone 13",
+    "almacenamiento": [
+      "128"
+    ],
+    "colores": [
+      {
+        "name": "azul",
+        "hex": "#9bb6cb"
+      },
+      {
+        "name": "blanco",
+        "hex": "#FFFFFF"
+      },
+      {
+        "name": "negro",
+        "hex": "#000000"
+      },
+      {
+        "name": "rojo",
+        "hex": "#e03647"
+      },
+      {
+        "name": "rosa",
+        "hex": "#f3b3dd"
+      },
+      {
+        "name": "verde",
+        "hex": "#687267"
+      }
+    ],
+    "imagenes": [
+      {
+        "path": "/decap/IPhone 13 COL2.png",
+        "color": "azul"
+      },
+      {
+        "path": "/decap/IPhone 13 COL1.png",
+        "color": "blanco"
+      },
+      {
+        "path": "/decap/IPhone 13 COL3.png",
+        "color": "negro"
+      },
+      {
+        "path": "/decap/IPhone 13 COL5.png",
+        "color": "rosa"
+      },
+      {
+        "path": "/decap/IPhone 13 COL4.png",
+        "color": "verde"
+      }
+    ]
+  },
+  {
+    "nombre": "Mini",
+    "precio": "1899000",
+    "categoria": "iPhone 13",
+    "almacenamiento": [
+      "128",
+      "256"
+    ],
+    "colores": [
+      {
+        "name": "azul",
+        "hex": "#9bb6cb"
+      },
+      {
+        "name": "blanco",
+        "hex": "#FFFFFF"
+      },
+      {
+        "name": "negro",
+        "hex": "#000000"
+      },
+      {
+        "name": "rojo",
+        "hex": "#e03647"
+      },
+      {
+        "name": "rosa",
+        "hex": "#f3b3dd"
+      },
+      {
+        "name": "verde",
+        "hex": "#687267"
+      }
+    ],
+    "imagenes": [
+      {
+        "path": "/decap/IPhone 13 COL2.png",
+        "color": "azul"
+      },
+      {
+        "path": "/decap/IPhone 13 COL1.png",
+        "color": "blanco"
+      },
+      {
+        "path": "/decap/IPhone 13 COL3.png",
+        "color": "negro"
+      },
+      {
+        "path": "/decap/IPhone 13 COL5.png",
+        "color": "rosa"
+      },
+      {
+        "path": "/decap/IPhone 13 COL4.png",
+        "color": "verde"
+      }
+    ]
+  },
+  {
+    "nombre": "Pro Max",
+    "precio": "2749000",
+    "categoria": "iPhone 13",
+    "almacenamiento": [
+      "128",
+      "256"
+    ],
+    "colores": [
+      {
+        "name": "dorado",
+        "hex": "#f4e8ce"
+      },
+      {
+        "name": "alpine-green",
+        "hex": "#576856"
+      },
+      {
+        "name": "sierra-blue",
+        "hex": "#acc5db"
+      },
+      {
+        "name": "graphite",
+        "hex": "#5f5e5a"
+      },
+      {
+        "name": "plata",
+        "hex": "#eff1f0"
+      }
+    ],
+    "imagenes": [
+      {
+        "path": "/decap/IPhone 13 pro COL5.png",
+        "color": "plata"
+      },
+      {
+        "path": "/decap/IPhone 13 pro COL2.png",
+        "color": "alpine-green"
+      },
+      {
+        "path": "/decap/IPhone 13 pro COL3.png",
+        "color": "sierra-blue"
+      },
+      {
+        "path": "/decap/IPhone 13 pro COL4.png",
+        "color": "graphite"
+      },
+      {
+        "path": "/decap/IPhone 13 pro COL1.png",
+        "color": "dorado"
+      }
+    ]
+  },
+  {
+    "nombre": "Pro",
+    "precio": "2399000",
+    "categoria": "iPhone 13",
+    "almacenamiento": [
+      "128",
+      "256"
+    ],
+    "colores": [
+      {
+        "name": "dorado",
+        "hex": "#f4e8ce"
+      },
+      {
+        "name": "alpine-green",
+        "hex": "#576856"
+      },
+      {
+        "name": "sierra-blue",
+        "hex": "#acc5db"
+      },
+      {
+        "name": "graphite",
+        "hex": "#5f5e5a"
+      },
+      {
+        "name": "plata",
+        "hex": "#eff1f0"
+      }
+    ],
+    "imagenes": [
+      {
+        "path": "/decap/IPhone 13 pro COL5.png",
+        "color": "plata"
+      },
+      {
+        "path": "/decap/IPhone 13 pro COL2.png",
+        "color": "alpine-green"
+      },
+      {
+        "path": "/decap/IPhone 13 pro COL3.png",
+        "color": "sierra-blue"
+      },
+      {
+        "path": "/decap/IPhone 13 pro COL4.png",
+        "color": "graphite"
+      },
+      {
+        "path": "/decap/IPhone 13 pro COL1.png",
+        "color": "dorado"
+      }
+    ]
+  },
+  {
+    "nombre": "",
+    "precio": "2299000",
+    "categoria": "iPhone 14",
+    "almacenamiento": [
+      "128",
+      "256"
+    ],
+    "colores": [
+      {
+        "name": "azul",
+        "hex": "#9bb6cb"
+      },
+      {
+        "name": "blanco",
+        "hex": "#FFFFFF"
+      },
+      {
+        "name": "morado",
+        "hex": "#d0c4db"
+      },
+      {
+        "name": "rojo",
+        "hex": "#e03647"
+      }
+    ],
+    "imagenes": [
+      {
+        "path": "/decap/iphone 14 COL2.png",
+        "color": "blanco"
+      },
+      {
+        "path": "/decap/iphone 14 COL3.png",
+        "color": "azul"
+      },
+      {
+        "path": "/decap/iphone 14 COL1.png",
+        "color": "morado"
+      },
+      {
+        "path": "/decap/iphone 14 COL4.png",
+        "color": "rojo"
+      }
+    ]
+  },
+  {
+    "nombre": "Plus",
+    "precio": "2499000",
+    "categoria": "iPhone 14",
+    "almacenamiento": [
+      "128",
+      "256"
+    ],
+    "colores": [
+      {
+        "name": "azul",
+        "hex": "#9bb6cb"
+      },
+      {
+        "name": "blanco",
+        "hex": "#FFFFFF"
+      },
+      {
+        "name": "morado",
+        "hex": "#d0c4db"
+      },
+      {
+        "name": "rojo",
+        "hex": "#e03647"
+      }
+    ],
+    "imagenes": [
+      {
+        "path": "/decap/iphone 14 COL2.png",
+        "color": "blanco"
+      },
+      {
+        "path": "/decap/iphone 14 COL3.png",
+        "color": "azul"
+      },
+      {
+        "path": "/decap/iphone 14 COL1.png",
+        "color": "morado"
+      },
+      {
+        "path": "/decap/iphone 14 COL4.png",
+        "color": "rojo"
+      }
+    ]
+  },
+  {
+    "nombre": "Pro Max",
+    "precio": "3549000",
+    "categoria": "iPhone 14",
+    "almacenamiento": [
+      "128",
+      "256"
+    ],
+    "colores": [
+      {
+        "name": "deep-purple",
+        "hex": "#655c6f"
+      },
+      {
+        "name": "dorado",
+        "hex": "#f4e8ce"
+      },
+      {
+        "name": "plata",
+        "hex": "#eff1f0"
+      },
+      {
+        "name": "space-black",
+        "hex": "#42413f"
+      }
+    ],
+    "imagenes": [
+      {
+        "path": "/decap/IPhone 14 pro COL2.png",
+        "color": "deep-purple"
+      },
+      {
+        "path": "/decap/iphone 14 pro COL4.png",
+        "color": "dorado"
+      },
+      {
+        "path": "/decap/iphone 14 pro COL1.png",
+        "color": "plata"
+      },
+      {
+        "path": "/decap/iphone 14 pro COL3.png",
+        "color": "space-black"
+      }
+    ]
+  },
+  {
+    "nombre": "Pro",
+    "precio": "3099000",
+    "categoria": "iPhone 14",
+    "almacenamiento": [
+      "128",
+      "256"
+    ],
+    "colores": [
+      {
+        "name": "deep-purple",
+        "hex": "#655c6f"
+      },
+      {
+        "name": "dorado",
+        "hex": "#f4e8ce"
+      },
+      {
+        "name": "plata",
+        "hex": "#eff1f0"
+      },
+      {
+        "name": "space-black",
+        "hex": "#42413f"
+      }
+    ],
+    "imagenes": [
+      {
+        "path": "/decap/IPhone 14 pro COL2.png",
+        "color": "deep-purple"
+      },
+      {
+        "path": "/decap/iphone 14 pro COL4.png",
+        "color": "dorado"
+      },
+      {
+        "path": "/decap/iphone 14 pro COL1.png",
+        "color": "plata"
+      },
+      {
+        "path": "/decap/iphone 14 pro COL3.png",
+        "color": "space-black"
+      }
+    ]
+  },
+  {
+    "nombre": "",
+    "precio": "2799000",
+    "categoria": "iPhone 15",
+    "almacenamiento": [
+      "128"
+    ],
+    "colores": [
+      {
+        "name": "amarillo",
+        "hex": "#fef492"
+      },
+      {
+        "name": "negro",
+        "hex": "#000000"
+      },
+      {
+        "name": "rosa",
+        "hex": "#f3b3dd"
+      },
+      {
+        "name": "verde",
+        "hex": "#687267"
+      }
+    ],
+    "imagenes": [
+      {
+        "path": "/decap/IPhone 15 COL4.png",
+        "color": "amarillo"
+      },
+      {
+        "path": "/decap/IPhone 15 COL2.png",
+        "color": "negro"
+      },
+      {
+        "path": "/decap/IPhone 15 COL3.png",
+        "color": "rosa"
+      },
+      {
+        "path": "/decap/IPhone 15 COL1.png",
+        "color": "verde"
+      }
+    ]
+  },
+  {
+    "nombre": "Pro Max",
+    "precio": "4199000",
+    "categoria": "iPhone 15",
+    "almacenamiento": [
+      "256"
+    ],
+    "colores": [
+      {
+        "name": "black-titanium",
+        "hex": "#444444"
+      },
+      {
+        "name": "blue-titanium",
+        "hex": "#5686c4"
+      },
+      {
+        "name": "titanium",
+        "hex": "#d6d3cb"
+      },
+      {
+        "name": "white-titanium",
+        "hex": "#FFFFFF"
+      }
+    ],
+    "imagenes": [
+      {
+        "path": "/decap/iphone 15 pro COL1.png",
+        "color": "black-titanium"
+      },
+      {
+        "path": "/decap/iphone 15 pro COL2.png",
+        "color": "blue-titanium"
+      },
+      {
+        "path": "/decap/iphone 15 pro COL3.png",
+        "color": "titanium"
+      },
+      {
+        "path": "/decap/iphone 15 pro COL4.png",
+        "color": "white-titanium"
+      }
+    ]
+  },
+  {
+    "nombre": "Pro",
+    "precio": "3599000",
+    "categoria": "iPhone 15",
+    "almacenamiento": [
+      "128",
+      "256"
+    ],
+    "colores": [
+      {
+        "name": "black-titanium",
+        "hex": "#444444"
+      },
+      {
+        "name": "blue-titanium",
+        "hex": "#5686c4"
+      },
+      {
+        "name": "titanium",
+        "hex": "#d6d3cb"
+      },
+      {
+        "name": "white-titanium",
+        "hex": "#FFFFFF"
+      }
+    ],
+    "imagenes": [
+      {
+        "path": "/decap/iphone 15 pro COL1.png",
+        "color": "black-titanium"
+      },
+      {
+        "path": "/decap/iphone 15 pro COL2.png",
+        "color": "blue-titanium"
+      },
+      {
+        "path": "/decap/iphone 15 pro COL3.png",
+        "color": "titanium"
+      },
+      {
+        "path": "/decap/iphone 15 pro COL4.png",
+        "color": "white-titanium"
+      }
+    ]
+  },
+  {
+    "nombre": "",
+    "precio": "3749000",
+    "categoria": "iPhone 16",
+    "almacenamiento": [
+      "128"
+    ],
+    "colores": [
+      {
+        "name": "ultramarine",
+        "hex": "#a0b2f7"
+      },
+      {
+        "name": "verde-azulado",
+        "hex": "#b7d7d6"
+      },
+      {
+        "name": "rosa",
+        "hex": "#f3b3dd"
+      },
+      {
+        "name": "blanco",
+        "hex": "#FFFFFF"
+      },
+      {
+        "name": "negro",
+        "hex": "#000000"
+      }
+    ],
+    "imagenes": [
+      {
+        "path": "/decap/iphone 16 COL4.png",
+        "color": "ultramarine"
+      },
+      {
+        "path": "/decap/iphone 16 COL5.jpg",
+        "color": "verde-azulado"
+      },
+      {
+        "path": "/decap/iphone 16 COL1.png",
+        "color": "rosa"
+      },
+      {
+        "path": "/decap/iphone 16 COL2.png",
+        "color": "blanco"
+      },
+      {
+        "path": "/decap/iphone 16 COL3.png",
+        "color": "negro"
+      }
+    ]
+  },
+  {
+    "nombre": "Plus",
+    "precio": "4799000",
+    "categoria": "iPhone 16",
+    "almacenamiento": [
+      "128"
+    ],
+    "colores": [
+      {
+        "name": "ultramarine",
+        "hex": "#a0b2f7"
+      },
+      {
+        "name": "verde-azulado",
+        "hex": "#b7d7d6"
+      },
+      {
+        "name": "rosa",
+        "hex": "#f3b3dd"
+      },
+      {
+        "name": "blanco",
+        "hex": "#FFFFFF"
+      },
+      {
+        "name": "negro",
+        "hex": "#000000"
+      }
+    ],
+    "imagenes": [
+      {
+        "path": "/decap/iphone 16 COL4.png",
+        "color": "ultramarine"
+      },
+      {
+        "path": "/decap/iphone 16 COL5.jpg",
+        "color": "verde-azulado"
+      },
+      {
+        "path": "/decap/iphone 16 COL1.png",
+        "color": "rosa"
+      },
+      {
+        "path": "/decap/iphone 16 COL2.png",
+        "color": "blanco"
+      },
+      {
+        "path": "/decap/iphone 16 COL3.png",
+        "color": "negro"
+      }
+    ]
+  },
+  {
+    "nombre": "Pro Max",
+    "precio": "5799000",
+    "categoria": "iPhone 16",
+    "almacenamiento": [
+      "128",
+      "256"
+    ],
+    "colores": [
+      {
+        "name": "desert-titanium",
+        "hex": "#e7d5c5"
+      },
+      {
+        "name": "black-titanium",
+        "hex": "#444444"
+      },
+      {
+        "name": "natural-titanium",
+        "hex": "#d6d3cb"
+      },
+      {
+        "name": "white-titanium",
+        "hex": "#FFFFFF"
+      }
+    ],
+    "imagenes": [
+      {
+        "path": "/decap/iphone 16 Pro COL2.png",
+        "color": "white-titanium"
+      },
+      {
+        "path": "/decap/iphone 16 Pro COL3.png",
+        "color": "black-titanium"
+      },
+      {
+        "path": "/decap/iphone 16 Pro COL3.png",
+        "color": "natural-titanium"
+      },
+      {
+        "path": "/decap/iphone 16 Pro COL1.png",
+        "color": "desert-titanium"
+      }
+    ]
+  },
+  {
+    "nombre": "Pro",
+    "precio": "5099000",
+    "categoria": "iPhone 16",
+    "almacenamiento": [
+      "256"
+    ],
+    "colores": [
+      {
+        "name": "desert-titanium",
+        "hex": "#e7d5c5"
+      },
+      {
+        "name": "black-titanium",
+        "hex": "#444444"
+      },
+      {
+        "name": "natural-titanium",
+        "hex": "#d6d3cb"
+      },
+      {
+        "name": "white-titanium",
+        "hex": "#FFFFFF"
+      }
+    ],
+    "imagenes": [
+      {
+        "path": "/decap/iphone 16 Pro COL2.png",
+        "color": "white-titanium"
+      },
+      {
+        "path": "/decap/iphone 16 Pro COL3.png",
+        "color": "black-titanium"
+      },
+      {
+        "path": "/decap/iphone 16 Pro COL3.png",
+        "color": "natural-titanium"
+      },
+      {
+        "path": "/decap/iphone 16 Pro COL1.png",
+        "color": "desert-titanium"
+      }
+    ]
+  },
+  {
+    "nombre": "Air 13 M1",
+    "precio": "3049000",
+    "categoria": "MacBook",
+    "imagen": "/decap/Macbook Air 13 M1.png"
+  },
+  {
+    "nombre": "Air 13 M3",
+    "precio": "4699000",
+    "categoria": "MacBook",
+    "imagen": "/decap/Macbook Air 13 M3.png"
+  },
+  {
+    "nombre": "Pro M1",
+    "precio": "2949000",
+    "categoria": "MacBook",
+    "imagen": "/decap/Macbook Pro M1.png"
+  }
 ]

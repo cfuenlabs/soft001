@@ -1,0 +1,61 @@
+{%- macro productCategory(categoryName) -%}
+<h1 style="text-align: center">{{ categoryName }}</h1>
+<div
+  style="
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+  "
+>
+  {%- for producto in productosCategorias %} {% if producto.categoria ==
+  categoryName %}
+  <a
+    href="/productos/{{ loop.index - 1 }}"
+    class="Product"
+    style="
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: inherit;
+      text-decoration: none;
+      max-width: 25vw;
+    "
+  >
+    {% if producto.imagenes %}
+    <div
+      class="w-box ProductImage"
+      style="
+								background-image: url('{{ producto.imagenes[0].path }}');
+								background-position: center;
+								background-size: contain;
+								background-repeat: no-repeat;
+							"
+    ></div>
+    {% else %}
+    <div
+      class="w-box ProductImage"
+      style="
+								background-image: url('{{ producto.imagen }}');
+								background-position: center;
+								background-size: contain;
+								background-repeat: no-repeat;
+							"
+    ></div>
+    {% endif %}
+    <span style="text-align: center; font-weight: 500">
+      {% if producto.nombre == '' %}
+      {{ producto.categoria }}
+      {% else %}
+      {{ producto.categoria }} {{ producto.nombre }}
+      {% endif %}
+    </span>
+  </a>
+  {% endif %} {% endfor -%}
+</div>
+<hr style="opacity: 0.25; margin-top: 60px" />
+{%- endmacro -%}

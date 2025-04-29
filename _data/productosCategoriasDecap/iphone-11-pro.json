@@ -1,0 +1,50 @@
+{
+  "nombre": "Pro",
+  "precio": 1399000,
+  "categoria": "iPhone 11",
+  "almacenamiento": [
+    {
+      "almacenamiento": "64"
+    },
+    {
+      "almacenamiento": "256"
+    }
+  ],
+  "tipo": "con colores",
+  "colores": [
+    {
+      "name": "dorado",
+      "hex": "#f4e8ce"
+    },
+    {
+      "name": "midnight green",
+      "hex": "#252e29"
+    },
+    {
+      "name": "space gray",
+      "hex": "#5b5754"
+    },
+    {
+      "name": "plata",
+      "hex": "#eff1f0"
+    }
+  ],
+  "imagenes_colores": [
+    {
+      "path": "/public/decap/IPhone 11 Pro COL1.png",
+      "color": "dorado"
+    },
+    {
+      "path": "/public/decap/IPhone 11 Pro COL2.png",
+      "color": "midnight green"
+    },
+    {
+      "path": "/public/decap/IPhone 11 Pro COL3.png",
+      "color": "space gray"
+    },
+    {
+      "path": "/public/decap/IPhone 11 Pro COL4.png",
+      "color": "plata"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "nombre": "Ultra 2 49mm",
+  "precio": 3049000,
+  "categoria": "AppleWatch",
+  "tipo": "con colores",
+  "colores": [
+    {
+      "name": "negro",
+      "hex": "#000000"
+    },
+    {
+      "name": "blanco",
+      "hex": "#FFFFFF"
+    }
+  ],
+  "imagenes_colores": [
+    {
+      "path": "/public/decap/Apple Watch Ultra 2 COL1.png",
+      "color": "negro"
+    },
+    {
+      "path": "/public/decap/Apple Watch Ultra 2 COL2.png",
+      "color": "blanco"
+    }
+  ]
+}

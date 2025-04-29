@@ -1,0 +1,37 @@
+[
+  {
+    "nombre": "Mega Pro",
+    "precio": "6969696",
+    "categoria": "iPhone",
+    "colores": [
+      {
+        "name": "pueblo-lavanda",
+        "hex": "#af33ba"
+      },
+      {
+        "name": "pterodácticlo",
+        "hex": "#c8c6c3"
+      }
+    ],
+    "imagenes": [
+      {
+        "path": "IPhone 12 malva-morado.webp",
+        "color": "pueblo-lavanda"
+      },
+      {
+        "path": "IPhone 11 pro max blanco.png",
+        "color": "semen-de-pterodácticlo"
+      }
+    ]
+  },
+  {
+    "nombre": "Sexo",
+    "precio": "69420000",
+    "categoria": "iPhone",
+    "almacenamiento": [
+      "128",
+      "256"
+    ],
+    "imagen": "IPhone 11 rojo.jpg"
+  }
+]

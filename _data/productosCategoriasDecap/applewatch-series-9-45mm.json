@@ -1,0 +1,66 @@
+{
+  "nombre": "Series 9 45mm",
+  "precio": 1699000,
+  "categoria": "AppleWatch",
+  "tipo": "con colores",
+  "colores": [
+    {
+      "name": "negro",
+      "hex": "#000000"
+    },
+    {
+      "name": "desert titanium",
+      "hex": "#e7d5c5"
+    },
+    {
+      "name": "blanco",
+      "hex": "#FFFFFF"
+    },
+    {
+      "name": "rosa",
+      "hex": "#f3b3dd"
+    },
+    {
+      "name": "rojo",
+      "hex": "#e03647"
+    },
+    {
+      "name": "plata",
+      "hex": "#eff1f0"
+    },
+    {
+      "name": "azul pacífico",
+      "hex": "#033357"
+    }
+  ],
+  "imagenes_colores": [
+    {
+      "path": "/public/decap/Apple Watch Series 9 COL1.png",
+      "color": "negro"
+    },
+    {
+      "path": "/public/decap/Apple Watch Series 9 COL2.png",
+      "color": "desert titanium"
+    },
+    {
+      "path": "/public/decap/Apple Watch Series 9 COL3.png",
+      "color": "blanco"
+    },
+    {
+      "path": "/public/decap/Apple Watch Series 9 COL4.png",
+      "color": "rosa"
+    },
+    {
+      "path": "/public/decap/Apple Watch Series 9 COL6.png",
+      "color": "white"
+    },
+    {
+      "path": "/public/decap/Apple Watch Series 9 COL7.png",
+      "color": "azul pacífico"
+    },
+    {
+      "path": "/public/decap/Apple Watch Series 9 COL8.png",
+      "color": "plata"
+    }
+  ]
+}

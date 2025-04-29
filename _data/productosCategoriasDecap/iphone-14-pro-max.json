@@ -1,0 +1,50 @@
+{
+  "nombre": "Pro Max",
+  "precio": 3549000,
+  "categoria": "iPhone 14",
+  "almacenamiento": [
+    {
+      "almacenamiento": "128"
+    },
+    {
+      "almacenamiento": "256"
+    }
+  ],
+  "tipo": "con colores",
+  "colores": [
+    {
+      "name": "deep purple",
+      "hex": "#655c6f"
+    },
+    {
+      "name": "dorado",
+      "hex": "#f4e8ce"
+    },
+    {
+      "name": "plata",
+      "hex": "#eff1f0"
+    },
+    {
+      "name": "space black",
+      "hex": "#42413f"
+    }
+  ],
+  "imagenes_colores": [
+    {
+      "path": "/public/decap/IPhone 14 pro COL2.png",
+      "color": "deep purple"
+    },
+    {
+      "path": "/public/decap/iphone 14 pro COL4.png",
+      "color": "dorado"
+    },
+    {
+      "path": "/public/decap/iphone 14 pro COL1.png",
+      "color": "plata"
+    },
+    {
+      "path": "/public/decap/iphone 14 pro COL3.png",
+      "color": "space black"
+    }
+  ]
+}

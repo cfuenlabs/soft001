@@ -1,0 +1,50 @@
+{
+  "nombre": "Pro Max",
+  "precio": 5799000,
+  "categoria": "iPhone 16",
+  "almacenamiento": [
+    {
+      "almacenamiento": "128"
+    },
+    {
+      "almacenamiento": "256"
+    }
+  ],
+  "tipo": "con colores",
+  "colores": [
+    {
+      "name": "desert titanium",
+      "hex": "#e7d5c5"
+    },
+    {
+      "name": "black titanium",
+      "hex": "#444444"
+    },
+    {
+      "name": "natural titanium",
+      "hex": "#d6d3cb"
+    },
+    {
+      "name": "white titanium",
+      "hex": "#FFFFFF"
+    }
+  ],
+  "imagenes_colores": [
+    {
+      "path": "/public/decap/iphone 16 Pro COL2.png",
+      "color": "white titanium"
+    },
+    {
+      "path": "/public/decap/iphone 16 Pro COL3.png",
+      "color": "black titanium"
+    },
+    {
+      "path": "/public/decap/iphone 16 Pro COL3.png",
+      "color": "natural titanium"
+    },
+    {
+      "path": "/public/decap/iphone 16 Pro COL1.png",
+      "color": "desert titanium"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
-media_folder: "../../public/decap/"
+media_folder: "public/decap/"
+local_backend: true
 # Use DecapBridge auth (required)
 backend:
   name: git-gateway
@@ -18,20 +19,27 @@ backend:
 
 collections:
   - name: "categorias"
+    editor:
+      preview: false
     label: "Categorías"
-    folder: "_data/categorias"
+    folder: "_data/categoriasDecap"
     create: true
+    format: json
     slug: "{{slug}}"
     identifier_field: "nombre"
     fields:
       - { label: "Nombre", name: "nombre", widget: "string" }
 
   - name: "productos"
+    editor:
+      preview: false
     label: "Productos"
-    folder: "_data/productos"
+    folder: "_data/productosCategoriasDecap"
     create: true
+    format: json
     slug: "{{slug}}"
     identifier_field: "nombre"
+    summary: "{{ categoria }} {{ nombre }}"
     fields:
       - { label: "Nombre", name: "nombre", widget: "string" }
       - {
@@ -81,21 +89,21 @@ collections:
           collapsed: false,
           label_singular: "imagen con color",
           fields: [
-            { label: "Imagen", name: "imagen", widget: "image" },
-            { label: "Nombre del color", name: "nombre_color", widget: "string" }
+            { label: "Imagen", name: "path", widget: "image" },
+            { label: "Nombre del color", name: "color", widget: "string" }
           ]
         }
       - {
           label: "Colores disponibles",
-          name: "colores_disponibles",
+          name: "colores",
           widget: "list",
           allow_add: true,
           collapsed: true,
-          summary: "{{fields.nombre}} ({{fields.valor}})",
+          summary: "{{fields.name}} ({{fields.hex}})",
           label_singular: "color",
           fields: [
-            { label: "Color", name: "valor", widget: "color" },
-            { label: "Nombre", name: "nombre", widget: "string" }
+            { label: "Color", name: "hex", widget: "color" },
+            { label: "Nombre", name: "name", widget: "string" }
           ]
         }
 

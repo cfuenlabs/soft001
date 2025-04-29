@@ -1,0 +1,58 @@
+{
+  "nombre": "Pro",
+  "precio": 2399000,
+  "categoria": "iPhone 13",
+  "almacenamiento": [
+    {
+      "almacenamiento": "128"
+    },
+    {
+      "almacenamiento": "256"
+    }
+  ],
+  "tipo": "con colores",
+  "colores": [
+    {
+      "name": "dorado",
+      "hex": "#f4e8ce"
+    },
+    {
+      "name": "alpine green",
+      "hex": "#576856"
+    },
+    {
+      "name": "sierra blue",
+      "hex": "#acc5db"
+    },
+    {
+      "name": "graphite",
+      "hex": "#5f5e5a"
+    },
+    {
+      "name": "plata",
+      "hex": "#eff1f0"
+    }
+  ],
+  "imagenes_colores": [
+    {
+      "path": "/public/decap/IPhone 13 pro COL5.png",
+      "color": "plata"
+    },
+    {
+      "path": "/public/decap/IPhone 13 pro COL2.png",
+      "color": "alpine green"
+    },
+    {
+      "path": "/public/decap/IPhone 13 pro COL3.png",
+      "color": "sierra blue"
+    },
+    {
+      "path": "/public/decap/IPhone 13 pro COL4.png",
+      "color": "graphite"
+    },
+    {
+      "path": "/public/decap/IPhone 13 pro COL1.png",
+      "color": "dorado"
+    }
+  ]
+}

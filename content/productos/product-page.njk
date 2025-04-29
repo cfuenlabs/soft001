@@ -37,7 +37,7 @@ background: none; border: 2px solid rgba(148, 104, 252, 1); }
 	<div
 		class="ProductImage w-box"
 		style="
-				background-image: url('/img/newproductos/{{ imagen.path }}');
+				background-image: url('{{ imagen.path }}');
 				background-position: center;
 				background-size: 60%;
 				background-repeat: no-repeat;
@@ -54,7 +54,7 @@ background: none; border: 2px solid rgba(148, 104, 252, 1); }
 		id="ProductImage"
 		class="w-box"
 		style="
-			background-image: url('/img/newproductos/{{ producto.imagen }}');
+			background-image: url('{{ producto.imagen }}');
 			background-position: center;
 			background-size: 60%;
 			background-repeat: no-repeat;
@@ -110,8 +110,9 @@ background: none; border: 2px solid rgba(148, 104, 252, 1); }
 					{% for color in producto.colores %}
 					<button
 						class="ColorButton w-box c1m9wykf cgfzz87 c1y9stmp cqixt7s c1hctfk1 c1skgs6s c12c16fo c13j9ftn c1k21dbm ct54u06 c18g2b9i cji22fm co5t2xk c5oagqz"
-						style="background-color: {{ color | textToColor }};"
-						data-color="{{ color }}"
+						style="background-color: {{ color.hex }};"
+						data-color="{{ color.name }}"
+						data-hex="{{ color.hex }}"
 					></button>
 					{% endfor %}
 				</div>
@@ -208,8 +209,9 @@ background: none; border: 2px solid rgba(148, 104, 252, 1); }
 					{% for color in producto.colores %}
 					<button
 						class="ColorButton w-box c1m9wykf cgfzz87 c1y9stmp cqixt7s c1hctfk1 c1skgs6s c12c16fo c13j9ftn c1k21dbm ct54u06 c18g2b9i cji22fm co5t2xk c5oagqz"
-						style="background-color: {{ color | textToColor }};"
-						data-color="{{ color }}"
+						style="background-color: {{ color.hex }};"
+						data-color="{{ color.name }}"
+						data-hex="{{ color.hex }}"
 					></button>
 					{% endfor %}
 				</div>
@@ -477,6 +479,10 @@ background: none; border: 2px solid rgba(148, 104, 252, 1); }
 					piElm => piElm.dataset.active === 'true'
 				)?.dataset.storage ?? null) : null
 
+			const colorHex = document.querySelectorAll('.ColorButton') ? (Array.from(document.querySelectorAll('.ColorButton')).find(
+					piElm => piElm.dataset.color === colorElm.dataset.color
+				)?.dataset.hex ?? null) : null
+
 			const productDataObj = {
 				id: '{{ pagination.pageNumber }}'+(colorElm ? (colorElm.dataset.color ?? '') : '')+(almacenamiento),
 				nombre: productName,
@@ -484,7 +490,7 @@ background: none; border: 2px solid rgba(148, 104, 252, 1); }
 				color: colorElm ?? null
 					? {
 							nombre: colorElm ? (colorElm.dataset.color ?? null) : null,
-							rgba: colorElm ? (getComputedStyle(colorElm).backgroundColor ?? null) : null,
+							hex: colorHex ? colorHex : null,
 					  }
 					: null,
 				imagen: imagenURL,

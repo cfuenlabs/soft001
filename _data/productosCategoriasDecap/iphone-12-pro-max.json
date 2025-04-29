@@ -1,0 +1,50 @@
+{
+  "nombre": "Pro Max",
+  "precio": 2149000,
+  "categoria": "iPhone 12",
+  "almacenamiento": [
+    {
+      "almacenamiento": "128"
+    },
+    {
+      "almacenamiento": "256"
+    }
+  ],
+  "tipo": "con colores",
+  "colores": [
+    {
+      "name": "dorado",
+      "hex": "#f4e8ce"
+    },
+    {
+      "name": "graphite",
+      "hex": "#5f5e5a"
+    },
+    {
+      "name": "azul pacífico",
+      "hex": "#033357"
+    },
+    {
+      "name": "plata",
+      "hex": "#eff1f0"
+    }
+  ],
+  "imagenes_colores": [
+    {
+      "path": "/public/decap/IPhone 12 Pro COL4.png",
+      "color": "dorado"
+    },
+    {
+      "path": "/public/decap/IPhone 12 Pro COL3.png",
+      "color": "plata"
+    },
+    {
+      "path": "/public/decap/IPhone 12 Pro COL1.png",
+      "color": "azul pacífico"
+    },
+    {
+      "path": "/public/decap/IPhone 12 Pro COL2.png",
+      "color": "graphite"
+    }
+  ]
+}

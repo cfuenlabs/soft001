@@ -1,0 +1,47 @@
+{
+  "nombre": "Pro Max",
+  "precio": 4199000,
+  "categoria": "iPhone 15",
+  "almacenamiento": [
+    {
+      "almacenamiento": "256"
+    }
+  ],
+  "tipo": "con colores",
+  "colores": [
+    {
+      "name": "black titanium",
+      "hex": "#444444"
+    },
+    {
+      "name": "blue titanium",
+      "hex": "#5686c4"
+    },
+    {
+      "name": "titanium",
+      "hex": "#d6d3cb"
+    },
+    {
+      "name": "white titanium",
+      "hex": "#FFFFFF"
+    }
+  ],
+  "imagenes_colores": [
+    {
+      "path": "/public/decap/iphone 15 pro COL1.png",
+      "color": "black titanium"
+    },
+    {
+      "path": "/public/decap/iphone 15 pro COL2.png",
+      "color": "blue titanium"
+    },
+    {
+      "path": "/public/decap/iphone 15 pro COL3.png",
+      "color": "titanium"
+    },
+    {
+      "path": "/public/decap/iphone 15 pro COL4.png",
+      "color": "white titanium"
+    }
+  ]
+}

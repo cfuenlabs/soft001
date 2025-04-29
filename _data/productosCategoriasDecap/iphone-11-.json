@@ -1,0 +1,58 @@
+{
+  "nombre": "",
+  "precio": 1149000,
+  "categoria": "iPhone 11",
+  "almacenamiento": [
+    {
+      "almacenamiento": "64"
+    },
+    {
+      "almacenamiento": "128"
+    }
+  ],
+  "tipo": "con colores",
+  "colores": [
+    {
+      "name": "amarillo",
+      "hex": "#fef492"
+    },
+    {
+      "name": "morado",
+      "hex": "#d0c4db"
+    },
+    {
+      "name": "negro",
+      "hex": "#000000"
+    },
+    {
+      "name": "rojo",
+      "hex": "#e03647"
+    },
+    {
+      "name": "verde",
+      "hex": "#687267"
+    }
+  ],
+  "imagenes_colores": [
+    {
+      "path": "/public/decap/IPhone 11 COL1.png",
+      "color": "amarillo"
+    },
+    {
+      "path": "/public/decap/IPhone 11 COL2.png",
+      "color": "morado"
+    },
+    {
+      "path": "/public/decap/IPhone 11 COL3.png",
+      "color": "negro"
+    },
+    {
+      "path": "/public/decap/IPhone 11 COL4.png",
+      "color": "rojo"
+    },
+    {
+      "path": "/public/decap/IPhone 11 COL5.png",
+      "color": "verde"
+    }
+  ]
+}

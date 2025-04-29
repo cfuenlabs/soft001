@@ -1,0 +1,47 @@
+{
+  "nombre": "",
+  "precio": 2799000,
+  "categoria": "iPhone 15",
+  "almacenamiento": [
+    {
+      "almacenamiento": "128"
+    }
+  ],
+  "tipo": "con colores",
+  "colores": [
+    {
+      "name": "amarillo",
+      "hex": "#fef492"
+    },
+    {
+      "name": "negro",
+      "hex": "#000000"
+    },
+    {
+      "name": "rosa",
+      "hex": "#f3b3dd"
+    },
+    {
+      "name": "verde",
+      "hex": "#687267"
+    }
+  ],
+  "imagenes_colores": [
+    {
+      "path": "/public/decap/IPhone 15 COL4.png",
+      "color": "amarillo"
+    },
+    {
+      "path": "/public/decap/IPhone 15 COL2.png",
+      "color": "negro"
+    },
+    {
+      "path": "/public/decap/IPhone 15 COL3.png",
+      "color": "rosa"
+    },
+    {
+      "path": "/public/decap/IPhone 15 COL1.png",
+      "color": "verde"
+    }
+  ]
+}

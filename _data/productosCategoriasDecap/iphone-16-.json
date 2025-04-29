@@ -1,0 +1,55 @@
+{
+  "nombre": "",
+  "precio": 3749000,
+  "categoria": "iPhone 16",
+  "almacenamiento": [
+    {
+      "almacenamiento": "128"
+    }
+  ],
+  "tipo": "con colores",
+  "colores": [
+    {
+      "name": "ultramarine",
+      "hex": "#a0b2f7"
+    },
+    {
+      "name": "verde azulado",
+      "hex": "#b7d7d6"
+    },
+    {
+      "name": "rosa",
+      "hex": "#f3b3dd"
+    },
+    {
+      "name": "blanco",
+      "hex": "#FFFFFF"
+    },
+    {
+      "name": "negro",
+      "hex": "#000000"
+    }
+  ],
+  "imagenes_colores": [
+    {
+      "path": "/public/decap/iphone 16 COL4.png",
+      "color": "ultramarine"
+    },
+    {
+      "path": "/public/decap/iphone 16 COL5.jpg",
+      "color": "verde azulado"
+    },
+    {
+      "path": "/public/decap/iphone 16 COL1.png",
+      "color": "rosa"
+    },
+    {
+      "path": "/public/decap/iphone 16 COL2.png",
+      "color": "blanco"
+    },
+    {
+      "path": "/public/decap/iphone 16 COL3.png",
+      "color": "negro"
+    }
+  ]
+}

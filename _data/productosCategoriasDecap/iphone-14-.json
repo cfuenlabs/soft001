@@ -1,0 +1,50 @@
+{
+  "nombre": "",
+  "precio": 2299000,
+  "categoria": "iPhone 14",
+  "almacenamiento": [
+    {
+      "almacenamiento": "128"
+    },
+    {
+      "almacenamiento": "256"
+    }
+  ],
+  "tipo": "con colores",
+  "colores": [
+    {
+      "name": "azul",
+      "hex": "#9bb6cb"
+    },
+    {
+      "name": "blanco",
+      "hex": "#FFFFFF"
+    },
+    {
+      "name": "morado",
+      "hex": "#d0c4db"
+    },
+    {
+      "name": "rojo",
+      "hex": "#e03647"
+    }
+  ],
+  "imagenes_colores": [
+    {
+      "path": "/public/decap/iphone 14 COL2.png",
+      "color": "blanco"
+    },
+    {
+      "path": "/public/decap/iphone 14 COL3.png",
+      "color": "azul"
+    },
+    {
+      "path": "/public/decap/iphone 14 COL1.png",
+      "color": "morado"
+    },
+    {
+      "path": "/public/decap/iphone 14 COL4.png",
+      "color": "rojo"
+    }
+  ]
+}
