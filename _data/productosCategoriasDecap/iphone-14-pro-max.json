@@ -4,10 +4,12 @@
   "categoria": "iPhone 14",
   "almacenamiento": [
     {
-      "almacenamiento": "128"
+      "almacenamiento": "128",
+      "precio": 0
     },
     {
-      "almacenamiento": "256"
+      "almacenamiento": "256",
+      "precio": 0
     }
   ],
   "tipo": "con colores",

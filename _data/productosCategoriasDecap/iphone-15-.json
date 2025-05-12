@@ -4,7 +4,8 @@
   "categoria": "iPhone 15",
   "almacenamiento": [
     {
-      "almacenamiento": "128"
+      "almacenamiento": "128",
+      "precio": 0
     }
   ],
   "tipo": "con colores",

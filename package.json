@@ -7,7 +7,7 @@
 		"build": "pnpm d2p && pnpx @11ty/eleventy",
 		"build-nocolor": "cross-env NODE_DISABLE_COLORS=1 npx @11ty/eleventy",
 		"build-ghpages": "pnpx @11ty/eleventy --pathprefix=/eleventy-base-blog/",
-		"start": "pnpx @11ty/eleventy --serve --quiet",
+		"start": "pnpm d2p && pnpx @11ty/eleventy --serve --quiet",
 		"start-ghpages": "pnpx @11ty/eleventy --pathprefix=/eleventy-base-blog/ --serve --quiet",
 		"debug": "cross-env DEBUG=Eleventy* npx @11ty/eleventy",
 		"debugstart": "cross-env DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
@@ -15,7 +15,11 @@
 		"test": "uvu scripts/tests",
 
 		"d2p": "node scripts/nen/decap2possum/main.js",
-		"d2p-rev": "node scripts/nen/decap2possum/main.js reverse"
+		"d2p-rev": "node scripts/nen/decap2possum/main.js reverse",
+		"storage-price-migration": "node scripts/nen/decap2possum/storagePriceMigration.js",
+
+		"start-prod": "pnpm d2p && netlify dev",
+		"decap": "pnpx decap-server"
 	},
 	"repository": {
 		"type": "git",

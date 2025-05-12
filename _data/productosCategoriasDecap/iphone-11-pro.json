@@ -4,10 +4,12 @@
   "categoria": "iPhone 11",
   "almacenamiento": [
     {
-      "almacenamiento": "64"
+      "almacenamiento": "64",
+      "precio": 0
     },
     {
-      "almacenamiento": "256"
+      "almacenamiento": "256",
+      "precio": 0
     }
   ],
   "tipo": "con colores",

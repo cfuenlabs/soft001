@@ -48,7 +48,7 @@ async function transformProducts() {
       // Simple product with storage options
       if (productData.almacenamiento && productData.almacenamiento.length > 0) {
         product.almacenamiento = productData.almacenamiento.map(
-          (item) => item.almacenamiento
+          (item) => item
         );
       }
 

@@ -179,7 +179,7 @@ endcss %}
 		function renderCart() {
 			const state = window.cflabs.state;
 			const carrito = document.querySelector("#Carrito");
-			const products = state.getState().products;
+			const products = state.getState().products
 
 			carrito.innerHTML = "";
 
@@ -200,6 +200,7 @@ endcss %}
 			// Reattach event listeners to the freshly added elements
 			Array.from(carrito.querySelectorAll(".removeFromCart")).forEach(
 				async (rfcElm) => {
+					console.log(rfcElm)
 					rfcElm.addEventListener("click", async () => {
 						state.getState().removeProduct(rfcElm.dataset.productId);
 						await window.cflabs.bold.setOrderInfo();

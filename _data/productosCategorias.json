@@ -266,8 +266,14 @@
     "precio": "1149000",
     "categoria": "iPhone 11",
     "almacenamiento": [
-      "64",
-      "128"
+      {
+        "almacenamiento": "64",
+        "precio": 0
+      },
+      {
+        "almacenamiento": "128",
+        "precio": 0
+      }
     ],
     "colores": [
       {
@@ -319,8 +325,14 @@
     "precio": "1599000",
     "categoria": "iPhone 11",
     "almacenamiento": [
-      "64",
-      "256"
+      {
+        "almacenamiento": "64",
+        "precio": 0
+      },
+      {
+        "almacenamiento": "256",
+        "precio": 0
+      }
     ],
     "colores": [
       {
@@ -364,8 +376,14 @@
     "precio": "1399000",
     "categoria": "iPhone 11",
     "almacenamiento": [
-      "64",
-      "256"
+      {
+        "almacenamiento": "64",
+        "precio": 0
+      },
+      {
+        "almacenamiento": "256",
+        "precio": 0
+      }
     ],
     "colores": [
       {
@@ -409,8 +427,14 @@
     "precio": "1449000",
     "categoria": "iPhone 12",
     "almacenamiento": [
-      "64",
-      "128"
+      {
+        "almacenamiento": "64",
+        "precio": 0
+      },
+      {
+        "almacenamiento": "128",
+        "precio": 0
+      }
     ],
     "colores": [
       {
@@ -470,7 +494,10 @@
     "precio": "1299000",
     "categoria": "iPhone 12",
     "almacenamiento": [
-      "64"
+      {
+        "almacenamiento": "64",
+        "precio": 0
+      }
     ],
     "colores": [
       {
@@ -530,8 +557,14 @@
     "precio": "2149000",
     "categoria": "iPhone 12",
     "almacenamiento": [
-      "128",
-      "256"
+      {
+        "almacenamiento": "128",
+        "precio": 0
+      },
+      {
+        "almacenamiento": "256",
+        "precio": 0
+      }
     ],
     "colores": [
       {
@@ -575,8 +608,14 @@
     "precio": "1749000",
     "categoria": "iPhone 12",
     "almacenamiento": [
-      "128",
-      "256"
+      {
+        "almacenamiento": "128",
+        "precio": 0
+      },
+      {
+        "almacenamiento": "256",
+        "precio": 0
+      }
     ],
     "colores": [
       {
@@ -620,7 +659,10 @@
     "precio": "1899000",
     "categoria": "iPhone 13",
     "almacenamiento": [
-      "128"
+      {
+        "almacenamiento": "128",
+        "precio": 0
+      }
     ],
     "colores": [
       {
@@ -676,8 +718,14 @@
     "precio": "1899000",
     "categoria": "iPhone 13",
     "almacenamiento": [
-      "128",
-      "256"
+      {
+        "almacenamiento": "128",
+        "precio": 0
+      },
+      {
+        "almacenamiento": "256",
+        "precio": 0
+      }
     ],
     "colores": [
       {
@@ -733,8 +781,14 @@
     "precio": "2749000",
     "categoria": "iPhone 13",
     "almacenamiento": [
-      "128",
-      "256"
+      {
+        "almacenamiento": "128",
+        "precio": 0
+      },
+      {
+        "almacenamiento": "256",
+        "precio": 0
+      }
     ],
     "colores": [
       {
@@ -786,8 +840,14 @@
     "precio": "2399000",
     "categoria": "iPhone 13",
     "almacenamiento": [
-      "128",
-      "256"
+      {
+        "almacenamiento": "128",
+        "precio": 0
+      },
+      {
+        "almacenamiento": "256",
+        "precio": 0
+      }
     ],
     "colores": [
       {
@@ -839,8 +899,14 @@
     "precio": "2299000",
     "categoria": "iPhone 14",
     "almacenamiento": [
-      "128",
-      "256"
+      {
+        "almacenamiento": "128",
+        "precio": 0
+      },
+      {
+        "almacenamiento": "256",
+        "precio": 0
+      }
     ],
     "colores": [
       {
@@ -884,8 +950,14 @@
     "precio": "2499000",
     "categoria": "iPhone 14",
     "almacenamiento": [
-      "128",
-      "256"
+      {
+        "almacenamiento": "128",
+        "precio": 0
+      },
+      {
+        "almacenamiento": "256",
+        "precio": 0
+      }
     ],
     "colores": [
       {
@@ -929,8 +1001,14 @@
     "precio": "3549000",
     "categoria": "iPhone 14",
     "almacenamiento": [
-      "128",
-      "256"
+      {
+        "almacenamiento": "128",
+        "precio": 0
+      },
+      {
+        "almacenamiento": "256",
+        "precio": 0
+      }
     ],
     "colores": [
       {
@@ -974,8 +1052,14 @@
     "precio": "3099000",
     "categoria": "iPhone 14",
     "almacenamiento": [
-      "128",
-      "256"
+      {
+        "almacenamiento": "128",
+        "precio": 0
+      },
+      {
+        "almacenamiento": "256",
+        "precio": 0
+      }
     ],
     "colores": [
       {
@@ -1019,7 +1103,10 @@
     "precio": "2799000",
     "categoria": "iPhone 15",
     "almacenamiento": [
-      "128"
+      {
+        "almacenamiento": "128",
+        "precio": 0
+      }
     ],
     "colores": [
       {
@@ -1063,7 +1150,10 @@
     "precio": "4199000",
     "categoria": "iPhone 15",
     "almacenamiento": [
-      "256"
+      {
+        "almacenamiento": "256",
+        "precio": 0
+      }
     ],
     "colores": [
       {
@@ -1107,8 +1197,14 @@
     "precio": "3599000",
     "categoria": "iPhone 15",
     "almacenamiento": [
-      "128",
-      "256"
+      {
+        "almacenamiento": "128",
+        "precio": 0
+      },
+      {
+        "almacenamiento": "256",
+        "precio": 0
+      }
     ],
     "colores": [
       {
@@ -1152,7 +1248,10 @@
     "precio": "3749000",
     "categoria": "iPhone 16",
     "almacenamiento": [
-      "128"
+      {
+        "almacenamiento": "128",
+        "precio": 0
+      }
     ],
     "colores": [
       {
@@ -1204,7 +1303,10 @@
     "precio": "4799000",
     "categoria": "iPhone 16",
     "almacenamiento": [
-      "128"
+      {
+        "almacenamiento": "128",
+        "precio": 0
+      }
     ],
     "colores": [
       {
@@ -1256,8 +1358,14 @@
     "precio": "5799000",
     "categoria": "iPhone 16",
     "almacenamiento": [
-      "128",
-      "256"
+      {
+        "almacenamiento": "128",
+        "precio": 30000
+      },
+      {
+        "almacenamiento": "256",
+        "precio": 60000
+      }
     ],
     "colores": [
       {
@@ -1301,7 +1409,10 @@
     "precio": "5099000",
     "categoria": "iPhone 16",
     "almacenamiento": [
-      "256"
+      {
+        "almacenamiento": "256",
+        "precio": 0
+      }
     ],
     "colores": [
       {

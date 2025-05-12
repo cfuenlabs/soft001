@@ -4,10 +4,12 @@
   "categoria": "iPhone 16",
   "almacenamiento": [
     {
-      "almacenamiento": "128"
+      "almacenamiento": "128",
+      "precio": 30000
     },
     {
-      "almacenamiento": "256"
+      "almacenamiento": "256",
+      "precio": 60000
     }
   ],
   "tipo": "con colores",

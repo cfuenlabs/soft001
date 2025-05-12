@@ -33,7 +33,7 @@ const zust = create((set, get) => ({
 					// --
 					(color ? " " + color.nombre : "") +
 					// --
-					(almacenamiento ? " " + almacenamiento : "")
+					(almacenamiento ? " " + almacenamiento[0].almacenamiento : "")
 			)
 			.join(" + ");
 	},

@@ -61,16 +61,17 @@ collections:
         }
       - { label: "Precio", name: "precio", widget: "number" }
       - {
-          label: "Almacenamiento",
-          name: "almacenamiento",
-          widget: "list",
-          allow_add: true,
-          collapsed: false,
-          label_singular: "Almacenamiento",
-          fields: [
-            { label: "Almacenamiento", name: "almacenamiento", widget: "string" }
-          ]
-        }
+        label: "Almacenamiento",
+        name: "almacenamiento",
+        widget: "list",
+        allow_add: true,
+        collapsed: false,
+        label_singular: "Almacenamiento",
+        fields: [
+          { label: "Almacenamiento", name: "almacenamiento", widget: "string" },
+          { label: "Precio", name: "precio", widget: "number" }  # Added price field
+        ]
+      }
 
       # Image for simple products (always shown)
       - {

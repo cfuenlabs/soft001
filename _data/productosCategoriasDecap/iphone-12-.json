@@ -4,10 +4,12 @@
   "categoria": "iPhone 12",
   "almacenamiento": [
     {
-      "almacenamiento": "64"
+      "almacenamiento": "64",
+      "precio": 0
     },
     {
-      "almacenamiento": "128"
+      "almacenamiento": "128",
+      "precio": 0
     }
   ],
   "tipo": "con colores",
