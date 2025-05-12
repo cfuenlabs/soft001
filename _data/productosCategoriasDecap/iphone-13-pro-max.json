@@ -1,15 +1,15 @@
 {
   "nombre": "Pro Max",
-  "precio": 2749000,
+  "precio": 2399000,
   "categoria": "iPhone 13",
   "almacenamiento": [
     {
       "almacenamiento": "128",
-      "precio": 0
+      "precio": 2399000
     },
     {
       "almacenamiento": "256",
-      "precio": 0
+      "precio": 2499000
     }
   ],
   "tipo": "con colores",
