@@ -1,15 +1,15 @@
 {
   "nombre": "Pro Max",
-  "precio": 2149000,
+  "precio": 1999000,
   "categoria": "iPhone 12",
   "almacenamiento": [
     {
       "almacenamiento": "128",
-      "precio": 0
+      "precio": 1999000
     },
     {
       "almacenamiento": "256",
-      "precio": 0
+      "precio": 2099000
     }
   ],
   "tipo": "con colores",
