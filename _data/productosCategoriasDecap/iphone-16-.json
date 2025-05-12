@@ -1,11 +1,11 @@
 {
-  "nombre": "",
-  "precio": 3749000,
+  "nombre": " ",
+  "precio": 3349000,
   "categoria": "iPhone 16",
   "almacenamiento": [
     {
       "almacenamiento": "128",
-      "precio": 0
+      "precio": 3349000
     }
   ],
   "tipo": "con colores",
