@@ -1,11 +1,11 @@
 {
   "nombre": " ",
-  "precio": 999000,
+  "precio": 998998,
   "categoria": "iPhone 11",
   "almacenamiento": [
     {
       "almacenamiento": "64",
-      "precio": 999000
+      "precio": 0
     },
     {
       "almacenamiento": "128",
