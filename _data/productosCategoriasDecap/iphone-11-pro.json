@@ -1,6 +1,6 @@
 {
   "nombre": "Pro",
-  "precio": 1399000,
+  "precio": 1299000,
   "categoria": "iPhone 11",
   "almacenamiento": [
     {
@@ -9,7 +9,7 @@
     },
     {
       "almacenamiento": "256",
-      "precio": 0
+      "precio": 1399000
     }
   ],
   "tipo": "con colores",
