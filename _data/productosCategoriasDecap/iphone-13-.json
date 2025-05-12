@@ -1,11 +1,15 @@
 {
-  "nombre": "",
-  "precio": 1899000,
+  "nombre": " ",
+  "precio": 1699000,
   "categoria": "iPhone 13",
   "almacenamiento": [
     {
       "almacenamiento": "128",
-      "precio": 0
+      "precio": 1699000
+    },
+    {
+      "almacenamiento": "256",
+      "precio": 1799000
     }
   ],
   "tipo": "con colores",
