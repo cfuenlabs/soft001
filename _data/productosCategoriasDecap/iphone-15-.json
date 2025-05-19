@@ -1,11 +1,15 @@
 {
-  "nombre": "",
-  "precio": 2799000,
+  "nombre": " ",
+  "precio": 2499000,
   "categoria": "iPhone 15",
   "almacenamiento": [
     {
       "almacenamiento": "128",
-      "precio": 0
+      "precio": 2499000
+    },
+    {
+      "almacenamiento": "256",
+      "precio": 2698999
     }
   ],
   "tipo": "con colores",

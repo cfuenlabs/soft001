@@ -1,15 +1,15 @@
 {
   "nombre": "Pro",
-  "precio": 3599000,
+  "precio": 3199000,
   "categoria": "iPhone 15",
   "almacenamiento": [
     {
       "almacenamiento": "128",
-      "precio": 0
+      "precio": 3199000
     },
     {
       "almacenamiento": "256",
-      "precio": 0
+      "precio": 3399000
     }
   ],
   "tipo": "con colores",

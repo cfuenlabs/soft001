@@ -1,15 +1,11 @@
 {
   "nombre": "Pro Max",
-  "precio": 5799000,
+  "precio": 5049000,
   "categoria": "iPhone 16",
   "almacenamiento": [
     {
-      "almacenamiento": "128",
-      "precio": 30000
-    },
-    {
       "almacenamiento": "256",
-      "precio": 60000
+      "precio": 5049000
     }
   ],
   "tipo": "con colores",

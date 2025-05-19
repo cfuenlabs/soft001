@@ -1,11 +1,15 @@
 {
   "nombre": "Pro",
-  "precio": 5099000,
+  "precio": 4249000,
   "categoria": "iPhone 16",
   "almacenamiento": [
     {
+      "almacenamiento": "128",
+      "precio": 4249000
+    },
+    {
       "almacenamiento": "256",
-      "precio": 0
+      "precio": 4699000
     }
   ],
   "tipo": "con colores",

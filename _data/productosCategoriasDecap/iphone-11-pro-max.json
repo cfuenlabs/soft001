@@ -1,15 +1,15 @@
 {
   "nombre": "Pro Max",
-  "precio": 1599000,
+  "precio": 1449000,
   "categoria": "iPhone 11",
   "almacenamiento": [
     {
       "almacenamiento": "64",
-      "precio": 0
+      "precio": 1449000
     },
     {
       "almacenamiento": "256",
-      "precio": 0
+      "precio": 1599000
     }
   ],
   "tipo": "con colores",

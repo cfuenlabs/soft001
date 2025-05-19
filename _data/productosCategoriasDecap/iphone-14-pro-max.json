@@ -1,15 +1,15 @@
 {
   "nombre": "Pro Max",
-  "precio": 3549000,
+  "precio": 2949000,
   "categoria": "iPhone 14",
   "almacenamiento": [
     {
       "almacenamiento": "128",
-      "precio": 0
+      "precio": 2949000
     },
     {
       "almacenamiento": "256",
-      "precio": 0
+      "precio": 3149000
     }
   ],
   "tipo": "con colores",

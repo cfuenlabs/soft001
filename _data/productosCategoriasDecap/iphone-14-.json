@@ -1,15 +1,15 @@
 {
-  "nombre": "",
-  "precio": 2299000,
+  "nombre": " ",
+  "precio": 1999000,
   "categoria": "iPhone 14",
   "almacenamiento": [
     {
       "almacenamiento": "128",
-      "precio": 0
+      "precio": 1999000
     },
     {
       "almacenamiento": "256",
-      "precio": 0
+      "precio": 2099000
     }
   ],
   "tipo": "con colores",

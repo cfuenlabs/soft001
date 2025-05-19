@@ -1,11 +1,11 @@
 {
   "nombre": "Pro Max",
-  "precio": 4199000,
+  "precio": 3749000,
   "categoria": "iPhone 15",
   "almacenamiento": [
     {
       "almacenamiento": "256",
-      "precio": 0
+      "precio": 3749000
     }
   ],
   "tipo": "con colores",

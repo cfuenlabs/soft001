@@ -1,15 +1,15 @@
 {
   "nombre": "Pro",
-  "precio": 2399000,
+  "precio": 2049000,
   "categoria": "iPhone 13",
   "almacenamiento": [
     {
       "almacenamiento": "128",
-      "precio": 0
+      "precio": 2049000
     },
     {
       "almacenamiento": "256",
-      "precio": 0
+      "precio": 2149000
     }
   ],
   "tipo": "con colores",

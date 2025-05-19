@@ -1,15 +1,15 @@
 {
   "nombre": "Pro",
-  "precio": 1749000,
+  "precio": 1699000,
   "categoria": "iPhone 12",
   "almacenamiento": [
     {
       "almacenamiento": "128",
-      "precio": 0
+      "precio": 1699000
     },
     {
       "almacenamiento": "256",
-      "precio": 0
+      "precio": 1799000
     }
   ],
   "tipo": "con colores",
