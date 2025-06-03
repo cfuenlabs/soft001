@@ -1,0 +1,10 @@
+[
+  {
+    "id": "escritorio",
+    "img": "/decap/banner.png"
+  },
+  {
+    "id": "movil",
+    "img": "/decap/banner_mobile.png"
+  }
+]

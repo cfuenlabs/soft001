@@ -1,3 +1,4 @@
+import { reverseTransformBanner, transformBanner } from './banner.js';
 import { transformCategories, reverseTransformCategories } from './categories.js';
 import { transformProducts, reverseTransformProducts } from './products.js';
 
@@ -15,6 +16,8 @@ async function runTransformations() {
         console.log('🐀🎈 Category transformation complete');
         await transformProducts();
         console.log('🐀🎈 Product transformation complete');
+        await transformBanner();
+        console.log('🐀🎈 Banner transformation complete');
         break;
 
       case 'reverse':
@@ -22,6 +25,8 @@ async function runTransformations() {
         console.log('🐀🎈 Reverse category transformation complete');
         await reverseTransformProducts();
         console.log('🐀🎈 Reverse product transformation complete');
+        await reverseTransformBanner();
+        console.log('🐀🎈 Reverse banner transformation complete');
         break;
 
       case 'transform-categories':
@@ -42,6 +47,16 @@ async function runTransformations() {
       case 'reverse-products':
         await reverseTransformProducts();
         console.log('🐀🎈 Reverse product transformation complete');
+        break;
+
+      case 'transform-banner':
+        await transformBanner();
+        console.log('🐀🎈 Banner transformation complete');
+        break;
+
+      case 'reverse-banner':
+        await reverseTransformBanner();
+        console.log('🐀🎈 Reverse banner transformation complete');
         break;
 
       default:

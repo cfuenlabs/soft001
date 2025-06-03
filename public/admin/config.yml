@@ -18,6 +18,29 @@ backend:
     openAuthoring: Message {{message}} - {{author-name}} <{{author-login}}> via DecapBridge
 
 collections:
+  - name: "banner"
+    editor:
+      preview: false
+    label: "Banner"
+    folder: "_data/bannerDecap"
+    create: true
+    format: json
+    slug: "{{slug}}"
+    identifier_field: "id"
+    fields:
+      - {
+          label: "Identificador",
+          name: "id",
+          widget: "string",
+          required: true
+        }
+      - {
+          label: "Imagen",
+          name: "img",
+          widget: "image",
+          required: true
+        }
+
   - name: "categorias"
     editor:
       preview: false

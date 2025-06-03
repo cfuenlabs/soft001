@@ -8,11 +8,24 @@ const title = "iPhoneShop Colombia"
 const description = "Cambia tu iPhone, dale una segunda oportunidad y estrena sin gastar de más. En iPhoneShop Bogotá hacemos que renovar tu equipo sea fácil y accesible. ¡Únete al parche!"
 ---
 
+{% for b in banner %}
+	{% if b.id == 'escritorio' %}
+	<script>
+		console.log('{{ b.img }}')
+	</script>
+	{% endif %}
+{% endfor %}
+
 {% include "randomproducts.njk" %}
+		<!-- </div> background-image: url('/img/banner.png'); -->
 <div
 	class="w-box c1motows desktop"
 	style="
-		background-image: url('/img/banner.png');
+		{% for b in banner %}
+			{% if b.id == 'escritorio' %}
+		background-image: url('{{ b.img }}');
+			{% endif %}
+		{% endfor %}
 		background-position: center;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -20,10 +33,15 @@ const description = "Cambia tu iPhone, dale una segunda oportunidad y estrena si
 		height: 555px;
 	"
 ></div>
+		<!-- </div> background-image: url('/img/banner_mobile.png'); -->
 <div
 	class="w-box c1motows mobile"
 	style="
-		background-image: url('/img/banner_mobile.png');
+		{% for b in banner %}
+			{% if b.id == 'movil' %}
+		background-image: url('{{ b.img }}');
+			{% endif %}
+		{% endfor %}
 		background-position: center;
 		background-size: contain;
 		background-repeat: no-repeat;

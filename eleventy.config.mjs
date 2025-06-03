@@ -113,7 +113,7 @@ export default async function (eleventyConfig) {
 	});
 
 	eleventyConfig.addFilter("lameMoney", (t) => {
-		console.log(`lame money: ${t} ${typeof t} ${t.length}`)
+		//console.log(`lame money: ${t} ${typeof t} ${t.length}`)
 		const t_Text = t+''
 		let processedMoney = "";
 		for (let i = 0; i < t_Text.length; i++) {
@@ -124,9 +124,9 @@ export default async function (eleventyConfig) {
 				processedMoney += "’";
 			}
 			processedMoney += t_Text.charAt(i);
-			console.log(`_processed money: ${processedMoney}`)
+			//console.log(`_processed money: ${processedMoney}`)
 		}
-		console.log(`processed money: ${processedMoney}`)
+		//console.log(`processed money: ${processedMoney}`)
 		return processedMoney;
 	});
 
