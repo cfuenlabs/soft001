@@ -55,7 +55,7 @@
   },
   {
     "nombre": "Lighting",
-    "precio": "380000",
+    "precio": "89999",
     "categoria": "AirPods",
     "imagen": "/decap/earpods lighting 1.png"
   },
@@ -262,17 +262,17 @@
     "imagen": "/decap/ipad pro 13.jpg"
   },
   {
-    "nombre": "",
-    "precio": "1149000",
+    "nombre": " ",
+    "precio": "999000",
     "categoria": "iPhone 11",
     "almacenamiento": [
       {
         "almacenamiento": "64",
-        "precio": 0
+        "precio": 999000
       },
       {
         "almacenamiento": "128",
-        "precio": 0
+        "precio": 1099000
       }
     ],
     "colores": [
@@ -322,16 +322,16 @@
   },
   {
     "nombre": "Pro Max",
-    "precio": "1599000",
+    "precio": "1449000",
     "categoria": "iPhone 11",
     "almacenamiento": [
       {
         "almacenamiento": "64",
-        "precio": 0
+        "precio": 1449000
       },
       {
         "almacenamiento": "256",
-        "precio": 0
+        "precio": 1599000
       }
     ],
     "colores": [
@@ -373,16 +373,16 @@
   },
   {
     "nombre": "Pro",
-    "precio": "1399000",
+    "precio": "1299000",
     "categoria": "iPhone 11",
     "almacenamiento": [
       {
         "almacenamiento": "64",
-        "precio": 0
+        "precio": 1299000
       },
       {
         "almacenamiento": "256",
-        "precio": 0
+        "precio": 1399000
       }
     ],
     "colores": [
@@ -423,80 +423,17 @@
     ]
   },
   {
-    "nombre": "",
-    "precio": "1449000",
-    "categoria": "iPhone 12",
-    "almacenamiento": [
-      {
-        "almacenamiento": "64",
-        "precio": 0
-      },
-      {
-        "almacenamiento": "128",
-        "precio": 0
-      }
-    ],
-    "colores": [
-      {
-        "name": "azul",
-        "hex": "#9bb6cb"
-      },
-      {
-        "name": "blanco",
-        "hex": "#FFFFFF"
-      },
-      {
-        "name": "morado",
-        "hex": "#d0c4db"
-      },
-      {
-        "name": "negro",
-        "hex": "#000000"
-      },
-      {
-        "name": "rojo",
-        "hex": "#e03647"
-      },
-      {
-        "name": "verde",
-        "hex": "#687267"
-      }
-    ],
-    "imagenes": [
-      {
-        "path": "/decap/IPhone 12 COL6.png",
-        "color": "azul"
-      },
-      {
-        "path": "/decap/IPhone 12 COL3.png",
-        "color": "blanco"
-      },
-      {
-        "path": "/decap/IPhone 12 COL2.png",
-        "color": "morado"
-      },
-      {
-        "path": "/decap/IPhone 12 COL5.png",
-        "color": "negro"
-      },
-      {
-        "path": "/decap/IPhone 12 COL4.png",
-        "color": "rojo"
-      },
-      {
-        "path": "/decap/IPhone 12 COL1.png",
-        "color": "verde"
-      }
-    ]
-  },
-  {
-    "nombre": "Mini",
+    "nombre": " ",
     "precio": "1299000",
     "categoria": "iPhone 12",
     "almacenamiento": [
       {
         "almacenamiento": "64",
-        "precio": 0
+        "precio": 1299000
+      },
+      {
+        "almacenamiento": "128",
+        "precio": 1449000
       }
     ],
     "colores": [
@@ -554,16 +491,16 @@
   },
   {
     "nombre": "Pro Max",
-    "precio": "2149000",
+    "precio": "1999000",
     "categoria": "iPhone 12",
     "almacenamiento": [
       {
         "almacenamiento": "128",
-        "precio": 0
+        "precio": 1999000
       },
       {
         "almacenamiento": "256",
-        "precio": 0
+        "precio": 2099000
       }
     ],
     "colores": [
@@ -605,16 +542,16 @@
   },
   {
     "nombre": "Pro",
-    "precio": "1749000",
+    "precio": "1699000",
     "categoria": "iPhone 12",
     "almacenamiento": [
       {
         "almacenamiento": "128",
-        "precio": 0
+        "precio": 1699000
       },
       {
         "almacenamiento": "256",
-        "precio": 0
+        "precio": 1799000
       }
     ],
     "colores": [
@@ -655,76 +592,17 @@
     ]
   },
   {
-    "nombre": "",
-    "precio": "1899000",
+    "nombre": " ",
+    "precio": "1699000",
     "categoria": "iPhone 13",
     "almacenamiento": [
       {
         "almacenamiento": "128",
-        "precio": 0
-      }
-    ],
-    "colores": [
-      {
-        "name": "azul",
-        "hex": "#9bb6cb"
-      },
-      {
-        "name": "blanco",
-        "hex": "#FFFFFF"
-      },
-      {
-        "name": "negro",
-        "hex": "#000000"
-      },
-      {
-        "name": "rojo",
-        "hex": "#e03647"
-      },
-      {
-        "name": "rosa",
-        "hex": "#f3b3dd"
-      },
-      {
-        "name": "verde",
-        "hex": "#687267"
-      }
-    ],
-    "imagenes": [
-      {
-        "path": "/decap/IPhone 13 COL2.png",
-        "color": "azul"
-      },
-      {
-        "path": "/decap/IPhone 13 COL1.png",
-        "color": "blanco"
-      },
-      {
-        "path": "/decap/IPhone 13 COL3.png",
-        "color": "negro"
-      },
-      {
-        "path": "/decap/IPhone 13 COL5.png",
-        "color": "rosa"
-      },
-      {
-        "path": "/decap/IPhone 13 COL4.png",
-        "color": "verde"
-      }
-    ]
-  },
-  {
-    "nombre": "Mini",
-    "precio": "1899000",
-    "categoria": "iPhone 13",
-    "almacenamiento": [
-      {
-        "almacenamiento": "128",
-        "precio": 0
+        "precio": 1699000
       },
       {
         "almacenamiento": "256",
-        "precio": 0
+        "precio": 1799000
       }
     ],
     "colores": [
@@ -778,16 +656,16 @@
   },
   {
     "nombre": "Pro Max",
-    "precio": "2749000",
+    "precio": "2399000",
     "categoria": "iPhone 13",
     "almacenamiento": [
       {
         "almacenamiento": "128",
-        "precio": 0
+        "precio": 2399000
       },
       {
         "almacenamiento": "256",
-        "precio": 0
+        "precio": 2499000
       }
     ],
     "colores": [
@@ -837,16 +715,16 @@
   },
   {
     "nombre": "Pro",
-    "precio": "2399000",
+    "precio": "2049000",
     "categoria": "iPhone 13",
     "almacenamiento": [
       {
         "almacenamiento": "128",
-        "precio": 0
+        "precio": 2049000
       },
       {
         "almacenamiento": "256",
-        "precio": 0
+        "precio": 2149000
       }
     ],
     "colores": [
@@ -895,17 +773,17 @@
     ]
   },
   {
-    "nombre": "",
-    "precio": "2299000",
+    "nombre": " ",
+    "precio": "1999000",
     "categoria": "iPhone 14",
     "almacenamiento": [
       {
         "almacenamiento": "128",
-        "precio": 0
+        "precio": 1999000
       },
       {
         "almacenamiento": "256",
-        "precio": 0
+        "precio": 2099000
       }
     ],
     "colores": [
@@ -947,16 +825,16 @@
   },
   {
     "nombre": "Plus",
-    "precio": "2499000",
+    "precio": "2199000",
     "categoria": "iPhone 14",
     "almacenamiento": [
       {
         "almacenamiento": "128",
-        "precio": 0
+        "precio": 2199000
       },
       {
         "almacenamiento": "256",
-        "precio": 0
+        "precio": 2299000
       }
     ],
     "colores": [
@@ -998,16 +876,16 @@
   },
   {
     "nombre": "Pro Max",
-    "precio": "3549000",
+    "precio": "2949000",
     "categoria": "iPhone 14",
     "almacenamiento": [
       {
         "almacenamiento": "128",
-        "precio": 0
+        "precio": 2949000
       },
       {
         "almacenamiento": "256",
-        "precio": 0
+        "precio": 3149000
       }
     ],
     "colores": [
@@ -1049,16 +927,16 @@
   },
   {
     "nombre": "Pro",
-    "precio": "3099000",
+    "precio": "2499000",
     "categoria": "iPhone 14",
     "almacenamiento": [
       {
         "almacenamiento": "128",
-        "precio": 0
+        "precio": 2499000
       },
       {
         "almacenamiento": "256",
-        "precio": 0
+        "precio": 2699000
       }
     ],
     "colores": [
@@ -1099,13 +977,17 @@
     ]
   },
   {
-    "nombre": "",
-    "precio": "2799000",
+    "nombre": " ",
+    "precio": "2499000",
     "categoria": "iPhone 15",
     "almacenamiento": [
       {
         "almacenamiento": "128",
-        "precio": 0
+        "precio": 2499000
+      },
+      {
+        "almacenamiento": "256",
+        "precio": 2698999
       }
     ],
     "colores": [
@@ -1147,12 +1029,12 @@
   },
   {
     "nombre": "Pro Max",
-    "precio": "4199000",
+    "precio": "3749000",
     "categoria": "iPhone 15",
     "almacenamiento": [
       {
         "almacenamiento": "256",
-        "precio": 0
+        "precio": 3749000
       }
     ],
     "colores": [
@@ -1194,16 +1076,16 @@
   },
   {
     "nombre": "Pro",
-    "precio": "3599000",
+    "precio": "3199000",
     "categoria": "iPhone 15",
     "almacenamiento": [
       {
         "almacenamiento": "128",
-        "precio": 0
+        "precio": 3199000
       },
       {
         "almacenamiento": "256",
-        "precio": 0
+        "precio": 3399000
       }
     ],
     "colores": [
@@ -1244,68 +1126,13 @@
     ]
   },
   {
-    "nombre": "",
-    "precio": "3749000",
+    "nombre": " ",
+    "precio": "3349000",
     "categoria": "iPhone 16",
     "almacenamiento": [
       {
         "almacenamiento": "128",
-        "precio": 0
-      }
-    ],
-    "colores": [
-      {
-        "name": "ultramarine",
-        "hex": "#a0b2f7"
-      },
-      {
-        "name": "verde-azulado",
-        "hex": "#b7d7d6"
-      },
-      {
-        "name": "rosa",
-        "hex": "#f3b3dd"
-      },
-      {
-        "name": "blanco",
-        "hex": "#FFFFFF"
-      },
-      {
-        "name": "negro",
-        "hex": "#000000"
-      }
-    ],
-    "imagenes": [
-      {
-        "path": "/decap/iphone 16 COL4.png",
-        "color": "ultramarine"
-      },
-      {
-        "path": "/decap/iphone 16 COL5.jpg",
-        "color": "verde-azulado"
-      },
-      {
-        "path": "/decap/iphone 16 COL1.png",
-        "color": "rosa"
-      },
-      {
-        "path": "/decap/iphone 16 COL2.png",
-        "color": "blanco"
-      },
-      {
-        "path": "/decap/iphone 16 COL3.png",
-        "color": "negro"
-      }
-    ]
-  },
-  {
-    "nombre": "Plus",
-    "precio": "4799000",
-    "categoria": "iPhone 16",
-    "almacenamiento": [
-      {
-        "almacenamiento": "128",
-        "precio": 0
+        "precio": 3349000
       }
     ],
     "colores": [
@@ -1355,16 +1182,12 @@
   },
   {
     "nombre": "Pro Max",
-    "precio": "5799000",
+    "precio": "5049000",
     "categoria": "iPhone 16",
     "almacenamiento": [
       {
-        "almacenamiento": "128",
-        "precio": 30000
-      },
-      {
         "almacenamiento": "256",
-        "precio": 60000
+        "precio": 5049000
       }
     ],
     "colores": [
@@ -1406,12 +1229,16 @@
   },
   {
     "nombre": "Pro",
-    "precio": "5099000",
+    "precio": "4249000",
     "categoria": "iPhone 16",
     "almacenamiento": [
       {
+        "almacenamiento": "128",
+        "precio": 4249000
+      },
+      {
         "almacenamiento": "256",
-        "precio": 0
+        "precio": 4699000
       }
     ],
     "colores": [
