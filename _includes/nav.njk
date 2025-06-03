@@ -24,25 +24,29 @@
 
 {% css %}
   #ModalOverlay {
-    opacity: 0.2;
-    background-color: black;
+    background-color: rgba(0 0 0 / 0.2);
     position: fixed;
     top: 0;
     left: 0;
     height: 100dvh;
     width: 100vw;
-    pointer-events: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   #ModalOverlay[data-active="false"] { display: none; }
-  #ModalOverlay[data-active="true"] { display: unset; }
+  #ModalOverlay[data-active="true"] { display: flex; }
+
+  #ModalOverlay[data-active="true"] + * {
+    pointer-events: none;
+  }
 
   .modal {
-    position: fixed;
     border-radius: 30px;
     background-color: white;
     flex-direction: column;
-    top: 40%;
-    left: 20%;
+		position: relative;
   }
   .modal[data-active="false"] { display: none; }
   .modal[data-active="true"] { display: flex; }
@@ -66,21 +70,39 @@
     opacity: 13%;
     border: 1px black solid;
   }
+
+  .Toast {
+    background-color: #9ee089;
+    width: 20vw;
+    min-height: 5vh;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+		margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .Toast[data-active="false"] { display: none; }
 {% endcss %}
 
-<div id="ModalOverlay" data-active="false"></div>
+<div id="ModalOverlay" data-active="false">
+  <div class="modal" id="NavModal" data-active="false" style="padding: 30px">
+    <img class="w-box c10ddvei c1qrwpo0 iconify x" src="{% icon 'close-large-fill' %}" alt="Cerrar">
+    <h2>¿A dónde vamos?</h2>
+    <hr>
+    <a href="/">Inicio</a>
+    <hr>
+    <a href="/productos">Productos</a>
+    <hr>
+    <a href="/servicios">Servicios</a>
+    <hr>
+    <a href="/nosotros">Sobre Nosotros</a>
+  </div>
+</div>
 
-<div class="modal" id="NavModal" data-active="false" style="padding: 30px">
-  <img class="w-box c10ddvei c1qrwpo0 iconify x" src="{% icon 'close-large-fill' %}" alt="Cerrar">
-  <h2>¿A dónde vamos?</h2>
-  <hr>
-  <a href="/">Inicio</a>
-  <hr>
-  <a href="/productos">Productos</a>
-  <hr>
-  <a href="/servicios">Servicios</a>
-  <hr>
-  <a href="/nosotros">Sobre Nosotros</a>
+<div id="Success" class="Toast" data-active="false">
+  Producto agregado exitosamente!
 </div>
 
 {% js %}
@@ -89,10 +111,12 @@
     "Hola! Quiero unirme al parche de las segundas oportunidades! 😎",
     "Hola! Quiero preguntar si tienen un producto disponible 🤔💭",
     "Buenas, quería llevar mi celular y que me asesoren para repararlo 🛠",
-    "Buenas, quiero comprar un iPhone 16 con mi iPhone 14 📱✨"
+    "Buenas, quiero comprar un iPhone nuevo con mi iPhone viejo 📱✨"
   ];
 
   window.cflabs.whatsAppURL = `https://api.whatsapp.com/send/?phone=573503324894&text=${encodeURIComponent(window.cflabs.msjsRandom[Math.floor(Math.random() * window.cflabs.msjsRandom.length)])}`;
+
+  // ----------------------------------------------------------------------
 
   // Modal toggle functionality
   document.querySelectorAll("[data-modal-id]").forEach(mt => {
@@ -115,4 +139,21 @@
       modalOverlay.dataset.active = 'false';
     });
   });
+
+  const toggleToast = (id, timeout = 3000) => {
+    const toast = document.querySelector(`#${id}`);
+
+    toast.dataset.active = toast.dataset.active === 'true' ? 'false' : 'true';
+
+		setTimeout(() => {
+    	toast.dataset.active = false;
+		}, timeout)
+	}
+
+  if (window.cflabs.utils) {
+    window.cflabs.utils.toggleToast = toggleToast
+  } else {
+    window.cflabs.utils = {}
+    window.cflabs.utils.toggleToast = toggleToast
+  }
 {% endjs %}

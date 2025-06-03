@@ -351,6 +351,7 @@ background: none; border: 2px solid rgba(148, 104, 252, 1); }
   		localStorage.setItem('products', JSON.stringify(state.getState().products))
   		console.log(state.getState().products);
   		window.cflabs.bold.setOrderInfo();
+			window.cflabs.utils.toggleToast('Success')
   	});
   })
 </script>

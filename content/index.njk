@@ -8,14 +8,6 @@ const title = "iPhoneShop Colombia"
 const description = "Cambia tu iPhone, dale una segunda oportunidad y estrena sin gastar de más. En iPhoneShop Bogotá hacemos que renovar tu equipo sea fácil y accesible. ¡Únete al parche!"
 ---
 
-{% for b in banner %}
-	{% if b.id == 'escritorio' %}
-	<script>
-		console.log('{{ b.img }}')
-	</script>
-	{% endif %}
-{% endfor %}
-
 {% include "randomproducts.njk" %}
 		<!-- </div> background-image: url('/img/banner.png'); -->
 <div
@@ -92,7 +84,7 @@ const description = "Cambia tu iPhone, dale una segunda oportunidad y estrena si
 				Servicio técnico
 			</div>
 			<div class="w-text c1efyick c1hfbpy8">
-				Cuarquier reparación que requieras realizar para tus dispositivos lo
+				Cualquier reparación que requieras realizar para tus dispositivos lo
 				encontrarás.
 			</div>
 		</div>
