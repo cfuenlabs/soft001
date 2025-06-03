@@ -9,14 +9,14 @@
     },
     {
       "almacenamiento": "256",
-      "precio": 2698999
+      "precio": 2699000
     }
   ],
   "tipo": "con colores",
   "colores": [
     {
-      "name": "amarillo",
-      "hex": "#fef492"
+      "name": "azul",
+      "hex": "#4db1e2"
     },
     {
       "name": "negro",
@@ -33,8 +33,8 @@
   ],
   "imagenes_colores": [
     {
-      "path": "/public/decap/IPhone 15 COL4.png",
-      "color": "amarillo"
+      "path": "/public/decap/iphone-15-azul.png",
+      "color": "azul"
     },
     {
       "path": "/public/decap/IPhone 15 COL2.png",

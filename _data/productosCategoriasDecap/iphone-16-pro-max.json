@@ -1,11 +1,11 @@
 {
   "nombre": "Pro Max",
-  "precio": 5049000,
+  "precio": 4949000,
   "categoria": "iPhone 16",
   "almacenamiento": [
     {
       "almacenamiento": "256",
-      "precio": 5049000
+      "precio": 4949000
     }
   ],
   "tipo": "con colores",
@@ -33,7 +33,7 @@
       "color": "white titanium"
     },
     {
-      "path": "/public/decap/iphone 16 Pro COL3.png",
+      "path": "/public/decap/celular-apple-iphone-16-pro-pro-max-negro-titanium-1.png",
       "color": "black titanium"
     },
     {
