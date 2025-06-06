@@ -44,10 +44,13 @@ endcss %}
 					required
 				/>
 				<select id="CustomerDocumentType" required>
-					<option value="" disabled selected>Tipo de documento</option>
-					<option value="CC">Cédula de ciudadanía</option>
-					<option value="CE">Cédula de extranjería</option>
-					<option value="NIT">NIT</option>
+					<option value="" disabled>Tipo de documento</option>
+					<option class="desktop" value="CC">Cédula de ciudadanía</option>
+					<option class="desktop" value="CE">Cédula de extranjería</option>
+					<option class="desktop" value="NIT">NIT</option>
+					<option class="mobile selected" value="CC">C.C</option>
+					<option class="mobile" value="CE">C.E</option>
+					<option class="mobile" value="NIT">NIT</option>
 				</select>
 			</div>
 		</div>
@@ -98,17 +101,16 @@ endcss %}
 			data-product-id="${product.id}"
 			style="
 				display: flex;
-				flex-direction: row;
-				background-color: #e9e9e9;
-				border-radius: 27px;
-				height: 100px;
-				justify-content: space-between;
-				align-items: center;
-				padding: 20px 100px;
-				margin: 0 100px;
-			"
-		>
-			<div style="display: flex; flex-direction: row; align-items: center; gap: 30px;">
+  			flex-direction: row;
+  			background-color: #e9e9e9;
+  			border-radius: 27px;
+  			height: 100px;
+  			justify-content: space-between;
+  			align-items: center;
+  			padding: 20px 20px;
+  			margin: 0 10px;
+			">
+			<div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
 				<img
 					style="height: 80px; border-radius: 10px;"
 					src="${product.imagen}"
@@ -136,17 +138,17 @@ endcss %}
 				</div>
 			</div>
 			<div style="display: flex; flex-direction: row; justify-content: start; align-items:center; gap: 10px;">
-				<div><span class="c1joile5 c1mg5cep crtj8fp">$ ${lameMoneyLocal(
+				<div><span style="font-size: 17px;" class="c1mg5cep crtj8fp">$ ${lameMoneyLocal(
 					product.precio
 				)}</span></div>
 				<button class="removeFromCart" data-product-id="${
 					product.id
-				}" style="border: none; background: none; cursor: pointer; width: fit-content;"><img
-					class="w-box c10ddvei c1qrwpo0 iconify x"
+				}" style="border: none; background: none; cursor: pointer; width: fit-content; height: 16px;"><img
+					class="w-box iconify x"
 					src="{% icon 'close-large-fill' %}"></button>
 			</div>
 		</div>
-	`;
+	`.replace(/\s{2,}/, '');
 	}
 
 	document.addEventListener("DOMContentLoaded", async () => {

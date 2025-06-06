@@ -1194,6 +1194,14 @@ img[src="/img/servicios/renuevate_1.png"] {
 	#ServicesMessage {
 		margin-top: unset !important;
 	}
+
+	#CustomerInfoForm {
+		padding: 0 10px important;
+	}
+
+	#CustomerInfoForm input {
+		width: 75% !important;
+	}
 }
 
 /* Small Phones (≤ 480px)
