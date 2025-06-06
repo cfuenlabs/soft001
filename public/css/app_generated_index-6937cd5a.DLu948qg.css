@@ -1,10 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 100 900; /* Supports variable font weights */
+  font-display: swap;
+  src: url('/css/Montserrat.woff2');
+}
+
+:root {
+		font-family: "Montserrat", sans-serif;
+  	font-optical-sizing: auto;
+  	font-style: normal;
+}
 
 @layer presets {
 	:root {
 		display: grid;
 		min-height: 100%;
-		font-family: Montserrat;
 		font-size: 16px;
 		line-height: 1.2;
 		white-space: pre-wrap;
@@ -12,10 +23,6 @@
 	}
 
 	body.w-body {
-		font-family: "Montserrat", sans-serif;
-  	font-optical-sizing: auto;
-  	font-style: normal;
-
 		box-sizing: border-box;
 		border-top-width: 1px;
 		border-right-width: 1px;
@@ -163,7 +170,8 @@
 		border-right-width: 1px;
 		border-bottom-width: 1px;
 		border-left-width: 1px;
-		outline-width: 1px
+		outline-width: 1px;
+		font-weight: 700;
 	}
 
 	b.w-bold-text {
