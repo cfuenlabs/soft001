@@ -1,15 +1,16 @@
 @font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 100 900; /* Supports variable font weights */
-  font-display: swap;
-  src: url('/css/Montserrat.woff2');
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 100 900;
+	/* Supports variable font weights */
+	font-display: swap;
+	src: url('/css/Montserrat.woff2');
 }
 
 :root {
-		font-family: "Montserrat", sans-serif;
-  	font-optical-sizing: auto;
-  	font-style: normal;
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
 }
 
 @layer presets {
@@ -1099,6 +1100,22 @@ img[src="/img/servicios/renuevate_1.png"] {
 	font-size: 1.5em !important;
 }
 
+button.removeFromCart img {
+	height: 30px;
+}
+
+.cartPrice {
+	font-size: 30px;
+}
+
+#Carrito {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 30px;
+	margin-bottom: 30px;
+}
+
 /* Large Phones (≤ 768px) */
 @media (max-width: 768px) {
 	:root {
@@ -1201,6 +1218,18 @@ img[src="/img/servicios/renuevate_1.png"] {
 
 	#CustomerInfoForm input {
 		width: 75% !important;
+	}
+
+	button.removeFromCart img {
+		height: 16px;
+	}
+
+	.cartPrice {
+		font-size: 17px;
+	}
+
+	#Carrito {
+    grid-template-columns: 1fr;
 	}
 }
 
