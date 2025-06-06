@@ -1116,6 +1116,10 @@ button.removeFromCart img {
 	margin-bottom: 30px;
 }
 
+#SillyBorder #TopText {
+	width: 450px;
+}
+
 /* Large Phones (≤ 768px) */
 @media (max-width: 768px) {
 	:root {
@@ -1194,6 +1198,7 @@ button.removeFromCart img {
 	#NosotrosPictureContainer {
 		top: 105%;
 		margin-bottom: 200px !important;
+		z-index: -1;
 	}
 
 	#NosotrosPictureContainer p {
@@ -1230,6 +1235,10 @@ button.removeFromCart img {
 
 	#Carrito {
     grid-template-columns: 1fr;
+	}
+
+	#SillyBorder #TopText {
+		width: 250px;
 	}
 }
 
