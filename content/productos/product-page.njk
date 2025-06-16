@@ -137,6 +137,7 @@ background: none; border: 2px solid rgba(148, 104, 252, 1); }
       </button>
 
       <button
+        id="WhatsAppBuyButton"
         class="w-button c1keckai c17r1h2z c1ifku28 cls8hpq c6kys0s c1s9v2a6 c1m9wykf cgfzz87 c1y9stmp cqixt7s c1ljdafx c1x0yk7u cfr73zw c1qxtfah cmv4ppy c1502ijh cc0b51r c1tmsdbh"
       >
         <span
@@ -281,6 +282,8 @@ background: none; border: 2px solid rgba(148, 104, 252, 1); }
 
 <script id="Setup_Bold_utils" src="/js/bold.js" type="module"></script>
 
+<script id="Setup_WhatsApp" src="/js/whatsapp.js" type="module"></script>
+
 <script>
   // Ensure everything is ready before interacting with the Zustand state
   document.addEventListener("DOMContentLoaded", () => {
@@ -300,8 +303,66 @@ background: none; border: 2px solid rgba(148, 104, 252, 1); }
   		const productName = `{{ producto.categoria }} {{ producto.nombre }}`
   	{% endif %}
 
+  	document.querySelector("#WhatsAppBuyButton").addEventListener("click", () => {
+  		const colorElm = Array.from(document.querySelectorAll('.ProductImage')).find(
+  			piElm => getComputedStyle(piElm).display === 'block'
+  		);
+
+  		const failsafe = document.querySelector('#ProductImage')
+
+  		const bgStyle = colorElm ? getComputedStyle(colorElm).backgroundImage : getComputedStyle(failsafe).backgroundImage;
+  		const imagenURL = bgStyle.startsWith('url(')
+  			? bgStyle.slice(4, -1).replace(/^["']|["']$/g, '')
+  			: null;
+
+    	{% if producto.almacenamiento.length > 0 %}
+    		{% if producto.almacenamiento.length < 2 %}
+  			const almacenamiento = document.querySelector('.StorageButton');
+  		{% else %}
+  			const almacenamiento = document.querySelector('.StorageButton[data-active="true"]');
+  		{% endif %}
+  		const storagePrice = { stylish: almacenamiento?.dataset.pricestylish, plain: parseInt(almacenamiento?.dataset.priceplain) };
+  		// const storagePrice = { stylish: almacenamiento?.dataset.priceStylish, plain: parseInt(almacenamiento?.dataset.price.replace(/’|\./, '')) };
+  	{% else %}
+  		const basePrice = parseInt('{{ producto.precio }}');
+  	{% endif %}
+
+  		const colorHex = document.querySelectorAll('.ColorButton') ? (Array.from(document.querySelectorAll('.ColorButton')).find(
+  				piElm => piElm.dataset.color === colorElm.dataset.color
+  			)?.dataset.hex ?? null) : null
+
+  		const productDataObj = {
+  			id: '{{ pagination.pageNumber }}'+(colorElm ? (colorElm.dataset.color ?? '') : '')+(almacenamiento.dataset.storage),
+  			nombre: productName,
+   	 		{% if producto.almacenamiento.length > 0 %}
+  			precio: storagePrice.plain,
+  		{% else %}
+  			precio: basePrice,
+  		{% endif %}
+  			almacenamiento: almacenamiento ? almacenamiento.dataset.storage : null,
+  			color: colorElm ?? null
+  				? {
+  						nombre: colorElm ? (colorElm.dataset.color ?? null) : null,
+  						hex: colorHex ? colorHex : null,
+  				  }
+  				: null,
+  			imagen: imagenURL,
+  		};
+
+  		window.cflabs.utils.toggleToast('WhatsAppToast')
+  	Array.from(document.querySelectorAll('.WhatsAppButton')).forEach(wb => {
+  		wb.href = cflabs.whatsAppProductURL(
+  		productDataObj.nombre,
+  		productDataObj.color ? (productDataObj.color.nombre.replace('-', ' ') ?? null) : null,
+  		productDataObj.almacenamiento);
+  		if(getComputedStyle(wb).display !== 'none') {
+  			wb.click();
+  		}
+  	})
+  	});
+
   	// Example of setting up the Bold button with dynamic data
-  	document.querySelector("#CartAddBtn").addEventListener("click", () => {
+  	document.querySelector("#CartAddBtn, #PurchaseBtn").addEventListener("click", (e) => {
   		const colorElm = Array.from(document.querySelectorAll('.ProductImage')).find(
   			piElm => getComputedStyle(piElm).display === 'block'
   		);
@@ -351,7 +412,10 @@ background: none; border: 2px solid rgba(148, 104, 252, 1); }
   		localStorage.setItem('products', JSON.stringify(state.getState().products))
   		console.log(state.getState().products);
   		window.cflabs.bold.setOrderInfo();
-			window.cflabs.utils.toggleToast('Success')
+  	window.cflabs.utils.toggleToast('Success')
+  if (e.target.id = 'PurchaseBtn') {
+  	window.location = '/productos/carrito'
+  }
   	});
   })
 </script>

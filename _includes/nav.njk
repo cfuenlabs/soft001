@@ -105,18 +105,11 @@
   Producto agregado exitosamente!
 </div>
 
+<div id="WhatsAppToast" class="Toast" data-active="false">
+	Será redirigido a WhatsApp en breve
+</div>
+
 {% js %}
-  window.cflabs = window.cflabs || {};
-  window.cflabs.msjsRandom = [
-    "Hola! Quiero unirme al parche de las segundas oportunidades! 😎",
-    "Hola! Quiero preguntar si tienen un producto disponible 🤔💭",
-    "Buenas, quería llevar mi celular y que me asesoren para repararlo 🛠",
-    "Buenas, quiero comprar un iPhone nuevo con mi iPhone viejo 📱✨"
-  ];
-
-  window.cflabs.whatsAppURL = `https://api.whatsapp.com/send/?phone=573503324894&text=${encodeURIComponent(window.cflabs.msjsRandom[Math.floor(Math.random() * window.cflabs.msjsRandom.length)])}`;
-
-  // ----------------------------------------------------------------------
 
   // Modal toggle functionality
   document.querySelectorAll("[data-modal-id]").forEach(mt => {
