@@ -1120,6 +1120,81 @@ button.removeFromCart img {
 	width: 450px;
 }
 
+.iMessage.Q {
+	background: #e5e4ea;
+	padding: 15px;
+	width: fit-content;
+	border-radius: 30px;
+	align-self: start;
+	position: relative;
+}
+
+.iMessage.A {
+	background: #9468fc;
+	color: white;
+	padding: 15px;
+	width: fit-content;
+	border-radius: 30px;
+	align-self: end;
+	max-width: 90%;
+	position: relative;
+}
+
+.iMessage.A::before {
+  width: 29px;
+  background-color: #9468fc;
+  border-bottom-right-radius: 16px 14px;
+  right: -14px;
+  border-bottom-left-radius: 10px;
+  margin-bottom: 1px;
+  height: 23px;
+}
+
+.iMessage.A::before, .iMessage.A::after {
+  position: absolute;
+  bottom: 0;
+  height: 24px;
+  content: '';
+  display: block;
+  bottom: 2px;
+  right: -20px;
+}
+
+.iMessage.A::after {
+	width: 20px;
+  background: white;
+  border-bottom-left-radius: 10px;
+  height: 30px;
+}
+
+.iMessage.Q::before {
+  width: 29px;
+  background-color: #e5e4ea;
+  border-bottom-left-radius: 16px 14px;
+  right: 14px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 1px;
+  height: 23px;
+}
+
+.iMessage.Q::before, .iMessage.Q::after {
+  position: absolute;
+  bottom: 0;
+  height: 24px;
+  content: '';
+  display: block;
+  bottom: 2px;
+	left: -20px;
+}
+
+.iMessage.Q::after {
+	width: 20px;
+  background: white;
+  border-bottom-right-radius: 10px;
+  height: 30px;
+}
+
+
 /* Large Phones (≤ 768px) */
 @media (max-width: 768px) {
 	:root {
@@ -1234,7 +1309,7 @@ button.removeFromCart img {
 	}
 
 	#Carrito {
-    grid-template-columns: 1fr;
+		grid-template-columns: 1fr;
 	}
 
 	#SillyBorder #TopText {
